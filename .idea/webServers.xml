@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d9b01779-572a-4cee-b481-d9e6ccb11e88" name="attorney-at-law.greenrivertech.net" url="http://attorney-at-law.greenrivertech.net">
+        <fileTransfer host="attorney-at-law.greenrivertech.net" port="2222" rootFolder="/home/attorneyatlaw" accessType="SFTP" password="dfefdfe3df9fdf89dfd3dffddfe8dffadff8dfc1dfd2dfd2" username="attorneyatlaw">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="2222" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
