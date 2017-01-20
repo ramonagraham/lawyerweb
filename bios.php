@@ -12,6 +12,7 @@
 
 <body>
 
+    <textarea rows="4" cols="20" placeholder="Place Picture Here"></textarea>
     <h2 class="bios-heading">Richard Levenson</h2>
 
     <p class="bios-text">Richard Levenson began practicing law in 1978.  He has over 30 years of experience advising
