@@ -1,57 +1,93 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Hillary
- * Date: 1/11/2017
- * Time: 10:51 AM
- */
+    include 'header.php';
+    ?>
 
-?>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
 
-<body id="home">
-<?php
-include ("");
-?>
+							<!-- Header -->
+								<header id="header">
+									<h1><strong>The Law Offices of Richard Levenson<br />
+									</strong></h1>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
 
-<h1>The Law Offices of Richard Levenson </h1>
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h2>Elit lacus, ac varius enim ullamcorper eu.</h2>
+										</header>
+										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+										<ul class="actions">
+											<li><a href="#" class="button big">Learn More</a></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="images/download.jpg" alt="" />
+									</span>
+								</section>
 
-<h3>Full-service Law Firm focused on Real Estate, Business Organization, and Commercial Transaction</h3>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Practice Areas</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon fa-diamond"></span>
+											<div class="content">
+												<h3>Real Estate</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-paper-plane"></span>
+											<div class="content">
+												<h3>Business Organization</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-rocket"></span>
+											<div class="content">
+												<h3>Estate Planning</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-signal"></span>
+											<div class="content">
+												<h3>Commercial Transactions</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+									</div>
+								</section>
 
-<div>
-    <p>
-        The Law Office of Richard Levenson is a full-service law firm focused on real estate,
-        business organization and commercial transactional law. We have nearly 40 years of experience in commercial
-        real estate transactions and real property issues. Our practice also excels at advising businesses during each
-        stage of the business's life cycle, including formation, contract disputes, mergers and acquisitions, commercial
-        transactions, security issuances (angel and venture capital investment, private placement offerings and
-        small-scale equity crowdfunding), industry specific regulatory compliance and business dissolution.
-    </p>
+						</div>
+					</div>
 
-    <p>
-        We also have experience advising on issues ranging from international trade and sharia-compliant transactions
-        to tax issues and estate planning.
-    </p>
-</div>
+                <?php
+                    include 'navbar.php';
+                ?>
 
-<div>
+			</div>
 
-    <p>
-        Local: 253-572-4109
-    </p>
-</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
-<div>
-    <p>
-        Location:
-    <br>
-        621 Pacific Ave
-    <br>
-        Suite 209
-    <br>
-        Tacoma, WA 98402
-    </p>
-</div>
-
-</body>
-
+	</body>
+</html>
