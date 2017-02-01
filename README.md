@@ -1,5 +1,0 @@
-# lawyerWebsiteProject
-The project our client requests contains three items in our priority list: a responsive website, data storage, and social media implementation. First, for the responsive website, our client would like our team to come up with a layout design, implement SEO to increase their web presence, and a mailing list for users to sign up. Second, our client would like a data storage area where an admin can post news/articles, documents, meta-tag documents, let in-house people retrieve the archived documents, and monitor analytics. Finally, our client wishes to have a profound social media presence implemented (either via LinkedIn, Facebook, Twitter or other social site) and be able to use a service (possibly Hootsuite or related service) to schedule updates.
-
-This project is being developed in an Agile environment with two week iterations. Our team will conduct daily stand-ups in-person or via Google Hangouts. Client meetings will be every two weeks. Sprint presentations will happen every two weeks.
-
