@@ -3,17 +3,27 @@
 ?>
     <!-- Main -->
     <div id="main" class="alt">
+        <!-- Banner -->
+        <!-- Note: The "styleN" class below should match that of the header element. -->
+        <section id="banner" class="style2">
+            <div class="inner">
+            <span class="image">
+                <img src="images/pic07.jpg" alt=""/>
+            </span>
+                <header class="major">
+                    <h1>Our Team</h1>
+                </header>
+                <div class="content">
+                    <!--      <p>Lorem ipsum dolor sit amet nullam consequat<br/>
+                              sed veroeros. tempus adipiscing nulla.</p>-->
 
+                </div>
+            </div>
+        </section>
         <!-- One -->
         <section id="one">
             <div class="inner">
-                <header class="major">
-                    <h1>Generic</h1>
-                </header>
                 <section>
-                    <header class="main">
-                        <h1>Our Team</h1>
-                    </header>
 
                     <span class="image main"><img src="images/pic11.jpg" alt=""/></span>
 

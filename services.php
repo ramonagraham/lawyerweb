@@ -5,16 +5,15 @@ include 'header.php';
     <!-- Note: The "styleN" class below should match that of the header element. -->
     <section id="banner" class="style2">
         <div class="inner">
-							<span class="image">
-								<img src="images/pic07.jpg" alt=""/>
-							</span>
+            <span class="image">
+                <img src="images/pic07.jpg" alt=""/>
+            </span>
             <header class="major">
-                <h1>The Law Offices of Richard Levenson</h1>
+                <h1>Areas Of Expertise</h1>
             </header>
             <div class="content">
           <!--      <p>Lorem ipsum dolor sit amet nullam consequat<br/>
                     sed veroeros. tempus adipiscing nulla.</p>-->
-
 
             </div>
         </div>
@@ -24,7 +23,7 @@ include 'header.php';
     <div id="main">
 
         <!-- One -->
-        <section id="one">
+        <section id="real-estate">
             <div class="inner">
                 <header class="major">
                     <h2>Real Estate</h2>
@@ -37,11 +36,14 @@ include 'header.php';
                     <li>Easements</li>
                     <li>Covenants</li>
                 </ul>
+                <ul class="actions">
+                    <li><a href="contact.php" class="button">Learn more</a></li>
+                </ul>
             </div>
         </section>
 
         <!-- Two -->
-        <section id="two" class="spotlights">
+        <section class="spotlights" id="business-organization">
             <section>
                 <a href="generic.php" class="image">
                     <img src="images/pic08.jpg" alt="" data-position="center center"/>
@@ -61,12 +63,12 @@ include 'header.php';
                             <li>Voting Rights and Proxy Agreements</li>
                         </ul>
                         <ul class="actions">
-                            <li><a href="generic.php" class="button">Learn more</a></li>
+                            <li><a href="contact.php" class="button">Learn more</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="estate-planning">
                 <a href="generic.php" class="image">
                     <img src="images/pic09.jpg" alt="" data-position="top center"/>
                 </a>
@@ -83,12 +85,12 @@ include 'header.php';
                             <li>Probate Estate</li>
                         </ul>
                         <ul class="actions">
-                            <li><a href="generic.php" class="button">Learn more</a></li>
+                            <li><a href="contact.php" class="button">Learn more</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="commercial-transaction">
                 <a href="generic.php" class="image">
                     <img src="images/pic10.jpg" alt="" data-position="25% 25%"/>
                 </a>
@@ -111,30 +113,12 @@ include 'header.php';
                             <li>Private Placement Offerings</li>
                         </ul>
                         <ul class="actions">
-                            <li><a href="generic.php" class="button">Learn more</a></li>
+                            <li><a href="contact.php" class="button">Learn more</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
         </section>
-
-       <!-- Three -->
-        <!--       <section id="three">
-                  <div class="inner">
-                      <header class="major">
-                          <h2>Massa libero</h2>
-                      </header>
-                      <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna
-                          sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas
-                          laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat
-                          tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et
-                          feugiat tempus.</p>
-                      <ul class="actions">
-                          <li><a href="generic.php" class="button next">Get Started</a></li>
-                      </ul>
-                  </div>
-              </section>-->
-
     </div>
 
 <?php
