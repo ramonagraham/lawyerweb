@@ -18,7 +18,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
         DEALINGS IN THE SOFTWARE.-->
 
-<!DOCTYPE HTML>
+<!--<!DOCTYPE HTML>
 <head xmlns="http://www.w3.org/1999/html">
     <title>Contact Us</title>
     <meta charset="utf-8" />
@@ -27,9 +27,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <link rel="stylesheet" href="assets/css/main.css" />
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-</head>
 
-<body>
+<?php
+include 'header.php';
+?>
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -105,21 +106,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="inner">
-            <ul class="icons">
-                <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </div>
-    </footer>
 
 </div>
 
