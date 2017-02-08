@@ -6,7 +6,7 @@ include 'header.php';
     <section id="banner" class="style2">
         <div class="inner">
             <span class="image">
-                <img src="images/pic07.jpg" alt=""/>
+                <img src="images/tacomaskyline.jpg" alt=""/>
             </span>
             <header class="major">
                 <h1>Areas Of Expertise</h1>
@@ -25,28 +25,38 @@ include 'header.php';
         <!-- One -->
         <section id="real-estate">
             <div class="inner">
-                <header class="major">
-                    <h2>Real Estate</h2>
-                </header>
 
-                <ul>
-                    <li>Commercial real estate transactions</li>
-                    <li>Boundary line disputes</li>
-                    <li>Adverse possession</li>
-                    <li>Easements</li>
-                    <li>Covenants</li>
-                </ul>
-                <ul class="actions">
-                    <li><a href="contact.php" class="button">Learn more</a></li>
-                </ul>
             </div>
         </section>
 
         <!-- Two -->
         <section class="spotlights" id="business-organization">
+            <section id="real-estate">
+                <a href="generic.php" class="image">
+                    <img src="images/tacomaskyline.jpg" alt="" data-position="top center"/>
+                </a>
+                <div class="content">
+                    <div class="inner">
+                        <header class="major">
+                            <h3>Real Estate</h3>
+                        </header>
+
+                        <ul>
+                            <li>Commercial real estate transactions</li>
+                            <li>Boundary line disputes</li>
+                            <li>Adverse possession</li>
+                            <li>Easements</li>
+                            <li>Covenants</li>
+                        </ul>
+                        <ul class="actions">
+                            <li><a href="contact.php" class="button">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
             <section>
                 <a href="generic.php" class="image">
-                    <img src="images/pic08.jpg" alt="" data-position="center center"/>
+                    <img src="images/handscity.jpg" alt="" data-position="center center"/>
                 </a>
                 <div class="content">
                     <div class="inner">
@@ -70,7 +80,7 @@ include 'header.php';
             </section>
             <section id="estate-planning">
                 <a href="generic.php" class="image">
-                    <img src="images/pic09.jpg" alt="" data-position="top center"/>
+                    <img src="images/children.jpg" alt="" data-position="top center"/>
                 </a>
                 <div class="content">
                     <div class="inner">
@@ -92,7 +102,7 @@ include 'header.php';
             </section>
             <section id="commercial-transaction">
                 <a href="generic.php" class="image">
-                    <img src="images/pic10.jpg" alt="" data-position="25% 25%"/>
+                    <img src="images/office.jpg" alt="" data-position="25% 25%"/>
                 </a>
                 <div class="content">
                     <div class="inner">

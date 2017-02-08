@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="lawyer-test">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="hillary">
     <serverData>
-      <paths name="lawyer-main">
+      <paths name="hillary">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="public_html/IT485" local="$PROJECT_DIR$" web="/IT485" />
+            <mapping deploy="public_html/IT485" local="$PROJECT_DIR$/../pullFromAtt" web="/IT485" />
           </mappings>
         </serverdata>
       </paths>
@@ -13,6 +14,7 @@
         <serverdata>
           <mappings>
             <mapping deploy="public_html/test" local="$PROJECT_DIR$" web="/test" />
+            <mapping deploy="public_html/test" local="$PROJECT_DIR$/../pullFromAtt" web="/test" />
           </mappings>
         </serverdata>
       </paths>

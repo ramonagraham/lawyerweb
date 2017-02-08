@@ -2,14 +2,6 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="837776a0-3a52-4a4f-86f1-629147ce4be8" name="lawyer-main" url="http://attorney-at-law.greenrivertech.net">
-        <fileTransfer host="attorney-at-law.greenrivertech.net" port="2222" rootFolder="/home/attorneyatlaw" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="2222" />
-        </fileTransfer>
-      </webServer>
       <webServer id="55e1d524-f5b3-4ad0-bce3-04fa2c0190c6" name="lawyer-test" url="http://attorney-at-law.greenrivertech.net">
         <fileTransfer host="attorney-at-law.greenrivertech.net" port="2222" rootFolder="/home/attorneyatlaw" accessType="SFTP">
           <advancedOptions>
