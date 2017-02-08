@@ -6,7 +6,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
         CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
         DEALINGS IN THE SOFTWARE.-->
--->
 <html>
 <head>
     <title>The Law Offices of Richard Levenson</title>
@@ -41,15 +40,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 </head>
 <body>
-<span class="center-span">
+<div class="center-span">
 <nav class="navbar-fixed-top">
         <a id="nav-home" class="button special" href="index.php">Home</a>
         <a id="nav-services" class="button special" href="services.php">Services</a>
         <a id="nav-bios" class="button special" href="bios.php">Our Team</a>
         <a id="nav-contact" class="button special" href="contact.php">Contact Us</a>
-    </ul>
 </nav>
-</span>
+</div>
 
 <!-- Wrapper -->
 <div id="wrapper">

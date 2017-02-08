@@ -19,5 +19,6 @@
 <script src="assets/js/main.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+</div>
 </body>
 </html>

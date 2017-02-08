@@ -23,7 +23,7 @@ include 'header.php';
     <div id="main">
 
         <!-- One -->
-        <section id="real-estate">
+        <section>
             <div class="inner">
 
             </div>
@@ -32,7 +32,7 @@ include 'header.php';
         <!-- Two -->
         <section class="spotlights" id="business-organization">
             <section id="real-estate">
-                <a href="generic.php" class="image">
+                <a href="contact.php" class="image">
                     <img src="images/tacomaskyline.jpg" alt="" data-position="top center"/>
                 </a>
                 <div class="content">
@@ -55,7 +55,7 @@ include 'header.php';
                 </div>
             </section>
             <section>
-                <a href="generic.php" class="image">
+                <a href="contact.php" class="image">
                     <img src="images/handscity.jpg" alt="" data-position="center center"/>
                 </a>
                 <div class="content">
@@ -79,7 +79,7 @@ include 'header.php';
                 </div>
             </section>
             <section id="estate-planning">
-                <a href="generic.php" class="image">
+                <a href="contact.php" class="image">
                     <img src="images/children.jpg" alt="" data-position="top center"/>
                 </a>
                 <div class="content">
@@ -101,7 +101,7 @@ include 'header.php';
                 </div>
             </section>
             <section id="commercial-transaction">
-                <a href="generic.php" class="image">
+                <a href="contact.php" class="image">
                     <img src="images/office.jpg" alt="" data-position="25% 25%"/>
                 </a>
                 <div class="content">

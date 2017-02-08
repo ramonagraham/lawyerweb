@@ -24,9 +24,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <?php
 include 'header.php';
 ?>
-<!-- Wrapper -->
-<div id="wrapper">
-
 
 
 

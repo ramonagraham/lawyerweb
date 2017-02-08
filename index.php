@@ -68,7 +68,7 @@ include 'header.php';
                     <img src="https://taboooo.files.wordpress.com/2010/09/blogs.jpg" alt=""/>
                 </span>
             <header class="major">
-                <h3><a href="generic.php" class="link">Blog</a></h3>
+                <h3><a href="contact.php" class="link">Blog</a></h3>
             </header>
         </article>
     </section>
@@ -99,4 +99,4 @@ include 'header.php';
 <?php
 include 'footer.php';
 ?>
-</div>
+
