@@ -3,9 +3,12 @@ include 'header.php';
 ?>
 
 <!-- Banner -->
-<
+
 <section id="banner" class="major">
     <div class="inner">
+            <span class="image">
+                    <img src="images/office.jpg" alt="Northern Pacific Office Building"/>
+                </span>
         <header class="major">
             <h1>The Law Offices of Richard Levenson</h1>
         </header>
@@ -22,7 +25,7 @@ include 'header.php';
     <section id="one" class="tiles">
         <article>
                 <span class="image">
-                    <img src="images/pic01.jpg" alt=""/>
+                    <img src="images/tacomaskyline.jpg" alt="Northern Pacific Office Building"/>
                 </span>
             <header class="major">
                 <h3><a href="services.php#real-estate" class="link">Real Estate</a></h3>
@@ -30,7 +33,7 @@ include 'header.php';
         </article>
         <article>
                 <span class="image">
-                    <img src="images/pic02.jpg" alt=""/>
+                    <img src="images/handscity.jpg" alt=""/>
                 </span>
             <header class="major">
                 <h3><a href="services.php#business-organization" class="link">Business Organization</a></h3>
@@ -38,7 +41,7 @@ include 'header.php';
         </article>
         <article>
                 <span class="image">
-                    <img src="images/pic03.jpg" alt=""/>
+                    <img src="images/children.jpg" alt=""/>
                 </span>
             <header class="major">
                 <h3><a href="services.php" class="link">Estate Planning</a></h3>
@@ -46,7 +49,7 @@ include 'header.php';
         </article>
         <article>
                 <span class="image">
-                    <img src="images/pic04.jpg" alt=""/>
+                    <img src="images/office.jpg" alt=""/>
                 </span>
             <header class="major">
                 <h3><a href="services.php" class="link">Commercial Transactions</a></h3>
@@ -54,15 +57,15 @@ include 'header.php';
         </article>
         <article>
                 <span class="image">
-                    <img src="images/pic05.jpg" alt=""/>
+                    <img src="images/office.jpg" alt="Northern Pacific Office Building"/>
                 </span>
             <header class="major">
-                <h3><a href="bios.php" class="link">The Firm</a></h3>
+                <h3><a href="bios.php" class="link">Our Team</a></h3>
             </header>
         </article>
         <article>
                 <span class="image">
-                    <img src="images/pic06.jpg" alt=""/>
+                    <img src="https://taboooo.files.wordpress.com/2010/09/blogs.jpg" alt=""/>
                 </span>
             <header class="major">
                 <h3><a href="generic.php" class="link">Blog</a></h3>
@@ -74,7 +77,7 @@ include 'header.php';
     <section id="two">
         <div class="inner">
             <header class="major">
-                <h2>Who We Are</h2>
+                <h2>Areas of Expertise</h2>
             </header>
             <p>The Law Office of Richard Levenson is a full-service law firm focused on real estate, business
                 organization and commercial transactional law. We have nearly 40 years of experience in commercial real

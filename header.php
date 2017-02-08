@@ -20,10 +20,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
     <!--[if lte IE 8]>
     <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css"/>
@@ -32,17 +28,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
 
+
+        <!--[if lte IE 8]>
+        <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <!--[if lte IE 9]>
+        <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+
+
+
 </head>
 <body>
 <span class="center-span">
 <nav class="navbar-fixed-top">
-        <a class="button special" href="index.php">Home</a>
-        <a class="button special" href="services.php">Services</a>
-        <a class="button special" href="bios.php">The Firm</a>
-        <a class="button special" href="contact.php">Contact Us</a>
+        <a id="nav-home" class="button special" href="index.php">Home</a>
+        <a id="nav-services" class="button special" href="services.php">Services</a>
+        <a id="nav-bios" class="button special" href="bios.php">Our Team</a>
+        <a id="nav-contact" class="button special" href="contact.php">Contact Us</a>
     </ul>
 </nav>
 </span>
+
 <!-- Wrapper -->
 <div id="wrapper">
     <!-- Menu -->
