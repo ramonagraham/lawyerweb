@@ -10,6 +10,14 @@
           <option name="port" value="2222" />
         </fileTransfer>
       </webServer>
+      <webServer id="011e54e4-9b56-49de-abc3-f6ee0a123510" name="lawyer-sandbox" url="http://attorney-at-law.greenrivertech.net">
+        <fileTransfer host="attorney-at-law.greenrivertech.net" port="2222" rootFolder="/home/attorneyatlaw" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="2222" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
