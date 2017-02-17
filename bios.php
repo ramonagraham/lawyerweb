@@ -2,6 +2,13 @@
     include 'header.php';
 ?>
 
+
+    <title>Our Team</title>
+
+<?php
+include 'navbar.php';
+?>
+
     <!-- Banner -->
     <!-- Note: The "styleN" class below should match that of the header element. -->
     <section id="banner" class="style2">

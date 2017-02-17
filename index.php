@@ -2,6 +2,11 @@
 include 'header.php';
 ?>
 
+<title>The Law Offices of Richard Levenson</title>
+
+<?php
+include 'navbar.php';
+?>
 <!-- Banner -->
 
 <section id="banner" class="major">
