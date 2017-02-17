@@ -1,5 +1,6 @@
 .button.special.active {
     background-color: #A9A9A9;
+    color: black;
 }
 
 .navbar-collapse {
@@ -12,5 +13,6 @@
 
  .button.special:hover {
     background-color: #53e3fb !important;
+    text-decoration: underline;
 }
 
