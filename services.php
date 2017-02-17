@@ -1,6 +1,13 @@
 <?php
 include 'header.php';
 ?>
+
+
+    <title>Law Services</title>
+
+<?php
+include 'navbar.php';
+?>
     <!-- Banner -->
     <!-- Note: The "styleN" class below should match that of the header element. -->
     <section id="banner" class="style2">
