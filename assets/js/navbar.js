@@ -3,8 +3,13 @@
  */
 
 $( document ).ready(function() {
-    var loc = window.location.href; // returns the full URL
+    // returns the full URL
+    var loc = window.location.href;
+
+    //removes the active class name from the current active button
     $(".button.special.active").removeClass("active");
+
+    //if block to add the active class dependent on the url
     if(/services/.test(loc)) {
         $('#nav-services').addClass('active');
     } else if (/bios/.test(loc)) {
