@@ -2,6 +2,11 @@
 include 'header.php';
 ?>
 
+<title>The Law Offices of Richard Levenson</title>
+
+<?php
+include 'navbar.php';
+?>
 <!-- Banner -->
 
 <section id="banner" class="major">
@@ -65,10 +70,10 @@ include 'header.php';
         </article>
         <article>
                 <span class="image">
-                    <img src="https://taboooo.files.wordpress.com/2010/09/blogs.jpg" alt=""/>
+                    <img src="images/blog.jpg" alt="Blog List"/>
                 </span>
             <header class="major">
-                <h3><a href="contact.php" class="link">Blog</a></h3>
+                <h3><a href="blog.php" class="link">Blog</a></h3>
             </header>
         </article>
     </section>

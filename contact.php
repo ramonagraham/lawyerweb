@@ -25,7 +25,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 include 'header.php';
 ?>
 
+<title>Contact Us</title>
 
+<?php
+include 'navbar.php';
+?>
 
     <!-- Main -->
     <div id="main" class="alt">
@@ -46,7 +50,7 @@ include 'header.php';
     <section id="contact">
         <div class="inner">
             <section>
-                <form method="post" action="#">
+                <form method="post" action="https://www.google.com/recaptcha/api/siteverify">
                     <div class="field half first">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name" />

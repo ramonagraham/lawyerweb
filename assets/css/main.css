@@ -3504,16 +3504,16 @@
 				}
 
 				#banner > .inner .content p {
-					font-size: 0.7em;
+					font-size: .9em;
 					font-weight: 600;
-					letter-spacing: 0.25em;
+					letter-spacing: 0.15em;
 					text-transform: uppercase;
 				}
 
 		#banner.major {
-			height: 75vh;
-			min-height: 30em;
-			max-height: 50em;
+			height: 25vh;
+			min-height: 20em;
+			max-height: 15em;
 		}
 
 			#banner.major.alt {
@@ -3978,28 +3978,11 @@
 		visibility: visible;
 	}
 
-	body.is-menu-visible #menu .inner {
-		-moz-transform: none;
-		-webkit-transform: none;
-		-ms-transform: none;
-		transform: none;
-		opacity: 1;
-		visibility: visible;
-	}
-
-	nav {
-		background-color: #363d63 !important;
-	}
-
-	.navbar-default {
-		background-image: none !important;
-		border-color: #363d63;
-	}
-
-	.button.special {
-		text-align: center;
-	}
-
-	.center-span {
-		text-align: center;
-	}
+		body.is-menu-visible #menu .inner {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+			opacity: 1;
+			visibility: visible;
+		}
