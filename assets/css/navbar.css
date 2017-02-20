@@ -1,3 +1,18 @@
 .button.special.active {
-    background-color: #CFCED3;
+    background-color: #A9A9A9;
+    color: black;
 }
+
+.navbar-collapse {
+    text-align:center;
+}
+.navbar-nav {
+    display:inline-block;
+    float:none;
+}
+
+ .button.special:hover {
+    background-color: #53e3fb !important;
+    text-decoration: underline;
+}
+
