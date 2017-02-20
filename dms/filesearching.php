@@ -10,14 +10,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-    Keyword:<br>
-    <input type="text" name="keyword" id="keyword"><br>
+<a href="fileuploading.php">Upload File</a>
+<h4>Keyword: </h4>
+    <input type="text" name="keyword" id="keyword">
+    <br/>
+    <br/>
     <input type="submit" id="search-submit">
-    <div id="resutls">
-        <h1>Results</h1>
-    </div>
+<div id="resutls">
+    <h4>Results</h4>
+</div>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#search-submit').click(function () {
             $('p').empty();
             var keyword = $('#keyword').val();
@@ -27,8 +30,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 type: 'post',
                 success: function (results) {
                     var output = JSON.parse(results);
-                    $.each(output, function(key,value) {
-                        $('#resutls').append('<p>'+value['file_name']+'</p>');
+                    $.each(output, function (key, value) {
+                        $('#resutls').append("<p><a href=uploads/" + value['file_name'] + ">" + value['file_name'] + '</a></p>');
                     });
                 }
             });
