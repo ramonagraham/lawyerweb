@@ -19,8 +19,8 @@ include 'navbar.php';
                 <h1>Areas Of Expertise</h1>
             </header>
             <div class="content">
-          <!--      <p>Lorem ipsum dolor sit amet nullam consequat<br/>
-                    sed veroeros. tempus adipiscing nulla.</p>-->
+                <!--      <p>Lorem ipsum dolor sit amet nullam consequat<br/>
+                          sed veroeros. tempus adipiscing nulla.</p>-->
 
             </div>
         </div>

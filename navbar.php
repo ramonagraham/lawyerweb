@@ -8,7 +8,7 @@
 ?>
 
 </head>
-<body ontouchstart="">
+<body>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Collapsed Nav Bar Div -->
@@ -25,11 +25,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a id="nav-home" class="button special active" href="index.php">Home</a></li>
-                <li><a id="nav-services" class="button special" href="services.php">Services</a></li>
-                <li><a id="nav-bios" class="button special" href="bios.php">Our Team</a></li>
-                <li><a id="nav-blog" class="button special" href="blog.php">Blogs</a></li>
-                <li><a id="nav-contact" class="button special" href="contact.php">Contact Us</a></li>
+                <li><a ontouchstart="" id="nav-home" class="button special active" href="index.php">Home</a></li>
+                <li><a ontouchstart="" id="nav-services" class="button special" href="services.php">Services</a></li>
+                <li><a ontouchstart="" id="nav-bios" class="button special" href="bios.php">Our Team</a></li>
+                <li><a ontouchstart="" id="nav-blog" class="button special" href="blog.php">Blogs</a></li>
+                <li><a ontouchstart="" id="nav-contact" class="button special" href="contact.php">Contact Us</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
