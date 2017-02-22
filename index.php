@@ -29,49 +29,49 @@ include 'navbar.php';
     <!-- One -->
     <section id="one" class="tiles">
         <article>
-                <span class="image">
-                    <img src="images/tacomaskyline.jpg" alt="Northern Pacific Office Building"/>
-                </span>
+            <span class="image">
+                <img src="images/tacomaskyline.jpg" alt="Northern Pacific Office Building"/>
+            </span>
             <header class="major">
                 <h3><a href="services.php#real-estate" class="link">Real Estate</a></h3>
             </header>
         </article>
         <article>
-                <span class="image">
-                    <img src="images/handscity.jpg" alt=""/>
-                </span>
+            <span class="image">
+                <img src="images/handscity.jpg" alt=""/>
+            </span>
             <header class="major">
                 <h3><a href="services.php#business-organization" class="link">Business Organization</a></h3>
             </header>
         </article>
         <article>
-                <span class="image">
-                    <img src="images/children.jpg" alt=""/>
-                </span>
+            <span class="image">
+                <img src="images/children.jpg" alt=""/>
+            </span>
             <header class="major">
                 <h3><a href="services.php" class="link">Estate Planning</a></h3>
             </header>
         </article>
         <article>
-                <span class="image">
-                    <img src="images/office.jpg" alt=""/>
-                </span>
+            <span class="image">
+                <img src="images/office.jpg" alt=""/>
+            </span>
             <header class="major">
                 <h3><a href="services.php" class="link">Commercial Transactions</a></h3>
             </header>
         </article>
         <article>
-                <span class="image">
-                    <img src="images/office.jpg" alt="Northern Pacific Office Building"/>
-                </span>
+            <span class="image">
+                <img src="images/office.jpg" alt="Northern Pacific Office Building"/>
+            </span>
             <header class="major">
                 <h3><a href="bios.php" class="link">Our Team</a></h3>
             </header>
         </article>
         <article>
-                <span class="image">
-                    <img src="images/blog.jpg" alt="Blog List"/>
-                </span>
+            <span class="image">
+                <img src="images/blog.jpg" alt="Blog List"/>
+            </span>
             <header class="major">
                 <h3><a href="blog.php" class="link">Blog</a></h3>
             </header>
