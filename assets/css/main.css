@@ -3986,3 +3986,20 @@
 			opacity: 1;
 			visibility: visible;
 		}
+
+nav {
+	background-color: #363d63 !important;
+}
+
+.navbar-default {
+	background-image: none !important;
+	border-color: #363d63;
+}
+
+.button.special {
+	text-align: center;
+}
+
+.center-span {
+	text-align: center;
+}
