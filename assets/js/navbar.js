@@ -16,6 +16,8 @@ $( document ).ready(function() {
         $('#nav-bios').addClass('active');
     } else if (/contact/.test(loc)) {
         $('#nav-contact').addClass('active');
+    } else if (/contact/.test(loc)) {
+        $('#nav-blog').addClass('active');
     } else {
         $('#nav-home').addClass('active');
     }

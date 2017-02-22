@@ -31,6 +31,8 @@ include 'header.php';
 include 'navbar.php';
 ?>
 
+    <link rel="stylesheet" href="assets/css/contact.css">
+
     <!-- Main -->
     <div id="main" class="alt">
 
