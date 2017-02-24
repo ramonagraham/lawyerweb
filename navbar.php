@@ -9,7 +9,7 @@
 
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Collapsed Nav Bar Div -->
         <div class="center-span">
