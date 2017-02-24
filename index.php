@@ -32,7 +32,7 @@ include 'navbar.php';
     <section id="one" class="tiles">
         <article>
             <span class="image">
-                <img src="images/tacomaskyline.jpg" alt="Northern Pacific Office Building"/>
+                <img src="images/tacomaskyline.jpg" alt="Real Estate"/>
             </span>
             <header class="major">
                 <h3><a href="services.php#real-estate" class="link">Real Estate</a></h3>
@@ -40,7 +40,7 @@ include 'navbar.php';
         </article>
         <article>
             <span class="image">
-                <img src="images/handscity.jpg" alt=""/>
+                <img src="images/handscity.jpg" alt="Business Organization"/>
             </span>
             <header class="major">
                 <h3><a href="services.php#business-organization" class="link">Business Organization</a></h3>
@@ -48,7 +48,7 @@ include 'navbar.php';
         </article>
         <article>
             <span class="image">
-                <img src="images/children.jpg" alt=""/>
+                <img src="images/children.jpg" alt="Estate Planning"/>
             </span>
             <header class="major">
                 <h3><a href="services.php" class="link">Estate Planning</a></h3>
@@ -56,7 +56,7 @@ include 'navbar.php';
         </article>
         <article>
             <span class="image">
-                <img src="images/office.jpg" alt=""/>
+                <img src="images/office.jpg" alt="Commercial Transaction"/>
             </span>
             <header class="major">
                 <h3><a href="services.php" class="link">Commercial Transactions</a></h3>
@@ -64,7 +64,7 @@ include 'navbar.php';
         </article>
         <article>
             <span class="image">
-                <img src="images/office.jpg" alt="Northern Pacific Office Building"/>
+                <img src="images/office.jpg" alt="Our Team"/>
             </span>
             <header class="major">
                 <h3><a href="bios.php" class="link">Our Team</a></h3>
