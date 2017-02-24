@@ -38,7 +38,7 @@ include 'navbar.php';
 
         <!-- Two -->
         <section class="spotlights" id="business-organization">
-            <section id="real-estate">
+            <section id="realestate">
                 <a href="contact.php" class="image">
                     <img src="images/tacomaskyline.jpg" alt="" data-position="top center"/>
                 </a>
@@ -61,7 +61,7 @@ include 'navbar.php';
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="businessorganization">
                 <a href="contact.php" class="image">
                     <img src="images/handscity.jpg" alt="" data-position="center center"/>
                 </a>
@@ -85,7 +85,7 @@ include 'navbar.php';
                     </div>
                 </div>
             </section>
-            <section id="estate-planning">
+            <section id="estateplanning">
                 <a href="contact.php" class="image">
                     <img src="images/children.jpg" alt="" data-position="top center"/>
                 </a>
@@ -107,7 +107,7 @@ include 'navbar.php';
                     </div>
                 </div>
             </section>
-            <section id="commercial-transaction">
+            <section id="commercialtransactions">
                 <a href="contact.php" class="image">
                     <img src="images/office.jpg" alt="" data-position="25% 25%"/>
                 </a>
