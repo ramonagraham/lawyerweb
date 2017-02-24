@@ -35,7 +35,7 @@ include 'navbar.php';
                 <img src="images/tacomaskyline.jpg" alt="Real Estate"/>
             </span>
             <header class="major">
-                <h3><a href="services.php#real-estate" class="link">Real Estate</a></h3>
+                <h3><a href="services.php#realestate" class="link">Real Estate</a></h3>
             </header>
         </article>
         <article>
@@ -43,7 +43,7 @@ include 'navbar.php';
                 <img src="images/handscity.jpg" alt="Business Organization"/>
             </span>
             <header class="major">
-                <h3><a href="services.php#business-organization" class="link">Business Organization</a></h3>
+                <h3><a href="services.php#businessorganization" class="link">Business Organization</a></h3>
             </header>
         </article>
         <article>
@@ -51,7 +51,7 @@ include 'navbar.php';
                 <img src="images/children.jpg" alt="Estate Planning"/>
             </span>
             <header class="major">
-                <h3><a href="services.php" class="link">Estate Planning</a></h3>
+                <h3><a href="services.php#estateplanning" class="link">Estate Planning</a></h3>
             </header>
         </article>
         <article>
@@ -59,7 +59,7 @@ include 'navbar.php';
                 <img src="images/office.jpg" alt="Commercial Transaction"/>
             </span>
             <header class="major">
-                <h3><a href="services.php" class="link">Commercial Transactions</a></h3>
+                <h3><a href="services.php#commercialtransactions" class="link">Commercial Transactions</a></h3>
             </header>
         </article>
         <article>
