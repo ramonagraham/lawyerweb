@@ -4,6 +4,7 @@ include 'header.php';
 
 
     <title>Our Team</title>
+    <meta name="description" content="Meet the team - Richard Levenson, Arthur DeLong, and Bridget Howe">
 
 <?php
 include 'navbar.php';
@@ -20,8 +21,6 @@ include 'navbar.php';
                 <h1>Our Team</h1>
             </header>
             <div class="content">
-                <!--      <p>Lorem ipsum dolor sit amet nullam consequat<br/>
-                          sed veroeros. tempus adipiscing nulla.</p>-->
 
             </div>
         </div>

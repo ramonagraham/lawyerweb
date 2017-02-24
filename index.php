@@ -3,13 +3,15 @@ include 'header.php';
 ?>
 
 <title>The Law Offices of Richard Levenson</title>
+<meta name="description" content="The Law offices of Richard Levenson specialize in Real Estate law,
+Business Organization law, estate planning, and Commercial law">
 
 <?php
 include 'navbar.php';
 ?>
-<!-- Banner -->
+    <!-- Banner -->
 
-<section id="banner" class="major">
+    <section id="banner" class="major">
     <div class="inner">
             <span class="image">
                     <img src="images/office.jpg" alt="Northern Pacific Office Building"/>

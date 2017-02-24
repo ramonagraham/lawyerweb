@@ -3,7 +3,9 @@ include 'header.php';
 ?>
 
 
-    <title>Law Services</title>
+    <title>Richard Levenson Law Practice Areas</title>
+    <meta name="description" content="Our firm specializes in Estate planning, Business orgainzation law,
+    Commercial Transaction law, and Real Estate law">
 
 <?php
 include 'navbar.php';
@@ -19,8 +21,6 @@ include 'navbar.php';
                 <h1>Areas Of Expertise</h1>
             </header>
             <div class="content">
-                <!--      <p>Lorem ipsum dolor sit amet nullam consequat<br/>
-                          sed veroeros. tempus adipiscing nulla.</p>-->
 
             </div>
         </div>

@@ -3,7 +3,9 @@ include 'header.php';
 ?>
 
 
-    <title>Blog</title>
+    <title>Richard Levenson Blogs</title>
+    <meta name="description" content="Our blogs are about relevant information regarding real estate,
+    business organization, estate planning, or commercial laws">
 
 <?php
 include 'navbar.php';
@@ -20,8 +22,6 @@ include 'navbar.php';
                 <h1>Blog</h1>
             </header>
             <div class="content">
-                <!--      <p>Lorem ipsum dolor sit amet nullam consequat<br/>
-                          sed veroeros. tempus adipiscing nulla.</p>-->
 
             </div>
         </div>
