@@ -3,8 +3,7 @@
 class FileProcessing
 {
     private $conn;
-    private $wordsToFind = array("supreme" => 0, "constitution" => 0, "appeals" => 0, "immigration" => 0, "lur" => 0,
-                                    "mls" => 0, "ema" => 0, "parcel" => 0);
+    private $wordsToFind = array();
     private $fileName;
 
     function __construct($conn,$fileName)
@@ -16,17 +15,23 @@ class FileProcessing
     function parseFile ()
     {
         $txt_file = file_get_contents('uploads/' . $this->fileName);
-        $foundWords = preg_split('/\s+/', $txt_file);
+        $foundText = preg_split('/\s+/', $txt_file);
 
-        foreach ($foundWords as $word) {
+        print_r($foundText);
+
+        foreach ($foundText as $word) {
             $word = trim($word);
             $word = strtolower($word);
             if (array_key_exists($word, $this->wordsToFind)) {
                 $value = $this->wordsToFind[$word];
                 $value++;
                 $this->wordsToFind[$word] = $value;
+            } else {
+                $this->wordsToFind[$word] = 1;
             }
         }
+        echo "<br/><br/><br/>";
+        print_r($this->wordsToFind);
 
         foreach ($this->wordsToFind as $key => $value) {
             $word = trim($key);
