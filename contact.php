@@ -77,15 +77,16 @@ endif;
                 <form method="post" action="">
                     <div class="field half first">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name"/>
+                        <input type="text" name="name" id="name" value ="?php echo $name; ?>"required/>
                     </div>
                     <div class="field half">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email"/>
+                        <input type="text" name="email" id="email" value="?php echo $email; ?>"required/>
                     </div>
                     <div class="field">
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="6"></textarea>
+                        <textarea name="message" id="message" rows="6" value="?php echo $message; ?>"
+                                  required></textarea>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6Ldo8BMUAAAAACw716jeK8UmL-CqSWC8uPtqonHI">
 
