@@ -8,7 +8,8 @@ require 'fileprocessing.php';
 
 $dbcon = new DbConn();
 $conn = $dbcon->getConnection();
-$fileProcessor = new FileProcessing($conn,basename($_FILES["fileToUpload"]["name"]));
+$fileName = basename($_FILES["fileToUpload"]["name"]);
+$fileProcessor = new FileProcessing($conn, $fileName);
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -38,9 +39,8 @@ if ($_FILES["fileToUpload"]["size"] > 50000000000000000) {
 }
 
 // Allow certain file formats
-echo $uploadFileType;
-if($uploadFileType != "pdf" && $uploadFileType != "txt") {
-        $_SESSION['uploaded'] = "Sorry, only txt or pdf files are allowed.";
+if(($uploadFileType != "txt")) {
+        $_SESSION['uploaded'] = "Sorry, only txt files are allowed.";
         $uploadOk = 0;
 }
 
@@ -60,11 +60,11 @@ if ($uploadOk == 0) {
 }
 
 if ($uploadOk == 1){
-    $fileProcessor->parseFile();
+        $fileProcessor->parseFile();
 }
 
 ob_end_clean( );
-header( 'Location: http://attorney-at-law.greenrivertech.net/sandbox/cj/dms/fileuploading.php' );
+header( 'Location: http://attorney-at-law.greenrivertech.net/test/dms/fileuploading.php' );
 exit;
 ?>
 
