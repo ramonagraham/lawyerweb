@@ -41,7 +41,7 @@ if (isset($_POST['submit']) && !empty($_POST['submit'])):
         $responseData = json_decode($verifyResponse);
         if ($responseData->success):
             //contact form submission code
-            $to = 'hillary@outlook.com';
+            $to = 'hwagoner11@outlook.com';
             $subject = 'New contact form have been submitted';
             $htmlContent = "
                 <h1>Contact request details</h1>
