@@ -19,7 +19,7 @@
             <ul class="nav navbar-nav">
                 <li><a ontouchstart="" id="nav-home" class="button special active" href="index.php">Home</a></li>
                 <li><a ontouchstart="" id="nav-services" class="button special" href="services.php">Services</a></li>
-                <li><a ontouchstart="" id="nav-bios" class="button special" href="bios.php">Our Team</a></li>
+                <li><a ontouchstart="" id="nav-bios" class="button special" href="bios.php">About Arthur</a></li>
                 <li><a ontouchstart="" id="nav-blog" class="button special" href="blog.php">Blogs</a></li>
                 <li><a ontouchstart="" id="nav-contact" class="button special" href="contact.php">Contact Us</a></li>
             </ul>

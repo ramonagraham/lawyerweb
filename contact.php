@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 
-    <title>Contact Us</title>
+    <title>Contact Arthur</title>
     <meta name="description" content="Contact us using the form, call, or e-mail">
 
 <?php
