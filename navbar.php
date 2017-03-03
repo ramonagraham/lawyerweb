@@ -21,7 +21,7 @@
                 <li><a ontouchstart="" id="nav-services" class="button special" href="services.php">Services</a></li>
                 <li><a ontouchstart="" id="nav-bios" class="button special" href="bios.php">About Arthur</a></li>
                 <li><a ontouchstart="" id="nav-blog" class="button special" href="blog.php">Blogs</a></li>
-                <li><a ontouchstart="" id="nav-contact" class="button special" href="contact.php">Contact Us</a></li>
+                <li><a ontouchstart="" id="nav-contact" class="button special" href="contact.php">Contact Arthur</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
