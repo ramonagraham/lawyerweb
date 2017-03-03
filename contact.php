@@ -3,7 +3,7 @@ include 'header.php';
 ?>
 
     <title>Contact Arthur</title>
-    <meta name="description" content="Contact us using the form, call, or e-mail">
+    <meta name="description" content="Contact Arthur using the form, call, or e-mail">
 
 <?php
 include 'navbar.php';
@@ -18,7 +18,7 @@ include 'navbar.php';
         <section id="one">
             <div class="inner">
                 <header class="major">
-                    <h1>Contact Us</h1>
+                    <h1>Contact Arthur</h1>
                 </header>
             </div>
         </section>
