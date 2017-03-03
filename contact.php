@@ -28,6 +28,10 @@ include 'navbar.php';
     <!-- Validate Captcha-->
 <?php
 if (isset($_POST['submit']) && !empty($_POST['submit'])):
+    //validate form
+    $name = !empty($_POST['name']) ? $_POST['name'] : '';
+    $email = !empty($_POST['email']) ? $_POST['email'] : '';
+    $message = !empty($_POST['message']) ? $_POST['message'] : '';
     if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
         //your site secret key
         $secret = '6Ldo8BMUAAAAAMql_tzEapQuNmtDbkoDDw1TqYrd';
@@ -37,11 +41,7 @@ if (isset($_POST['submit']) && !empty($_POST['submit'])):
         $responseData = json_decode($verifyResponse);
         if ($responseData->success):
             //contact form submission code
-            $name = !empty($_POST['name']) ? $_POST['name'] : '';
-            $email = !empty($_POST['email']) ? $_POST['email'] : '';
-            $message = !empty($_POST['message']) ? $_POST['message'] : '';
-
-            $to = 'contact@codexworld.com';
+            $to = 'hwagoner11@outlook.com';
             $subject = 'New contact form have been submitted';
             $htmlContent = "
                 <h1>Contact request details</h1>
@@ -58,6 +58,11 @@ if (isset($_POST['submit']) && !empty($_POST['submit'])):
             @mail($to, $subject, $htmlContent, $headers);
 
             $succMsg = 'Your contact request have submitted successfully.';
+
+            //reset fields
+            $name = '';
+            $email = '';
+            $message = '';
         else:
             $errMsg = 'Robot verification failed, please try again.';
         endif;
@@ -77,17 +82,15 @@ endif;
                 <form method="post" action="">
                     <div class="field half first">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name"/>
+                        <input type="text" name="name" id="name" value ="<?php echo $name; ?>"required/>
                     </div>
                     <div class="field half">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email"/>
+                        <input type="email" name="email" id="email" value="<?php echo $email; ?>"required/>
                     </div>
                     <div class="field">
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="6"></textarea>
-                    </div>
-                    <div class="g-recaptcha" data-sitekey="6Ldo8BMUAAAAACw716jeK8UmL-CqSWC8uPtqonHI">
+                        <textarea name="message" id="message" rows="6" required><?php echo $message; ?></textarea>
 
                     </div>
                     <div>
@@ -95,12 +98,17 @@ endif;
                         echo $errMsg, $succMsg;
                         ?>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6Ldo8BMUAAAAACw716jeK8UmL-CqSWC8uPtqonHI">
+
+                    </div>
+
                     <ul class="actions">
                         <li><input type="submit" name="submit" value="Send Message" class="special"/></li>
                         <li><input type="reset" value="Clear"/></li>
                     </ul>
                 </form>
             </section>
+
             <section class="split">
                 <section>
                     <div class="contact-method">
