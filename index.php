@@ -2,9 +2,10 @@
 include 'header.php';
 ?>
 
-<title>The Law Offices of Richard Levenson</title>
-<meta name="description" content="The Law offices of Richard Levenson specialize in Real Estate law,
-Business Organization law, estate planning, and Commercial law">
+<title>Arthur DeLong</title>
+<meta name="description" content="Arthur DeLong is an attorney located in Tacoma, WA who services
+    the Puget Sound area. His expertise is in real estate law, business organization law, commercial transactions law,
+    and estate planning law.">
 
 <?php
 include 'navbar.php';
@@ -17,11 +18,11 @@ include 'navbar.php';
                     <img src="images/office.jpg" alt="Northern Pacific Office Building"/>
                 </span>
         <header class="major">
-            <h1>The Law Offices of Richard Levenson</h1>
+            <h1>ARTHUR DeLONG</h1>
         </header>
         <div class="content">
             <p>Full-service law firm focused on real estate,
-                business organization, and commercial transactions.</p>
+                business organization, estate planning, and commercial transactions.</p>
         </div>
     </div>
 </section>
@@ -67,7 +68,7 @@ include 'navbar.php';
                 <img src="images/office.jpg" alt="Our Team"/>
             </span>
             <header class="major">
-                <h3><a href="bios.php" class="link">Our Team</a></h3>
+                <h3><a href="bios.php" class="link">About Arthur</a></h3>
             </header>
         </article>
         <article>
@@ -86,8 +87,8 @@ include 'navbar.php';
             <header class="major">
                 <h2>Areas of Expertise</h2>
             </header>
-            <p>The Law Office of Richard Levenson is a full-service law firm focused on real estate, business
-                organization and commercial transactional law. We have nearly 40 years of experience in commercial real
+            <p>Arthur DeLong is a full-service lawyer focused on real estate, business
+                organization, estate planning, and commercial transactional law. We have many years experience in commercial real
                 estate transactions and real property issues. Our practice also excels at advising businesses during
                 each stage of the business's life cycle, including formation, contract disputes, mergers and
                 acquisitions, commercial transactions, security issuances (angel and venture capital investment, private

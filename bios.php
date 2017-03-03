@@ -3,8 +3,8 @@ include 'header.php';
 ?>
 
 
-    <title>Our Team</title>
-    <meta name="description" content="Meet the team - Richard Levenson, Arthur DeLong, and Bridget Howe">
+    <title>About Arthur DeLong</title>
+    <meta name="description" content="Meet Arthur DeLong - Attorney and Lawyer located in Puget Sound area">
 
 <?php
 include 'navbar.php';
@@ -18,7 +18,7 @@ include 'navbar.php';
                 <img src="images/tacomaskyline.jpg" alt="Tacoma Real Estate Skyline"/>
             </span>
             <header class="major">
-                <h1>Our Team</h1>
+                <h1>About Arthur</h1>
             </header>
             <div class="content">
 
@@ -32,13 +32,6 @@ include 'navbar.php';
         <section id="one">
             <div class="inner">
                 <section>
-                    <h1>Richard Levenson</h1>
-                    <p>Richard Levenson began practicing law in 1978. He has over 30 years of experience advising
-                        clients
-                        on complex commercial real estate transactions, business formation and business disputes. His
-                        practice includes estate planning and providing legal advice on state tax law, as well as
-                        general
-                        and complex civil litigation.</p>
 
                     <h1>Arthur DeLong</h1>
                     <p>Arthur DeLong practices business and commercial transactional law, and advises clients on matters
@@ -58,10 +51,6 @@ include 'navbar.php';
                         issues
                         with the Iraqi Refugee Assistance Project.</p>
 
-                    <h1>Bridget Howe</h1>
-                    <p>Bridget graduated from Western Washington University in 2001 with a major in Art History and
-                        a minor in East Asian Studies. She earned her paralegal certificate from University of
-                        Washington Tacoma in 2006, and became a licensed Limited Practice Officer in 2012.</p>
 
                     <hr class="major"/>
 
