@@ -73,7 +73,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 <header class="major">
                     <h2>Log In</h2>
                 </header>
-                <form action="process-login.php">
+                <form action="process-login.php" method="post">
 
                     <label>Username</label>
                     <input type="text" placeholder="Enter username" name="username" required >
@@ -81,7 +81,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                     <label>Password</label>
                     <input type="password" placeholder="Enter Password" name="password" required>
 
-                    <button type="submit">Enter</button>
+                    <button type="submit" name="submit" value="Login">Enter</button>
 
 
                 </form>
