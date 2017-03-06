@@ -4,7 +4,7 @@ include 'header.php';
 
 
     <title>About Arthur DeLong</title>
-    <meta name="description" content="Meet Arthur DeLong - Attorney and Lawyer located in Puget Sound area">
+    <meta name="description" content="Meet Arthur DeLong - Attorney and Lawyer located in Puget Sound, Tacoma, WA">
 
 <?php
 include 'navbar.php';
