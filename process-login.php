@@ -7,7 +7,7 @@
  */
 
     include ("dbconnect.php");
-    session_start();
+
 
     if($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -21,8 +21,6 @@
         $count = mysqli_num_rows($result);
 
         if($count == 1) {
-            session_register("myusername");
-            $_SESSION['login_user'] = $myusername;
 
             header("location: welcome.php");
         } else {

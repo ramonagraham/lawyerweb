@@ -8,7 +8,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <html>
 <head>
-    <title>The Law Offices of Richard Levenson</title>
+    <title>Arthur DeLong</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <!-- Latest compiled and minified CSS -->
@@ -54,7 +54,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                     <img src="images/office.jpg" alt="Northern Pacific Office Building"/>
                 </span>
             <header class="major">
-                <h1>The Law Offices of Richard Levenson</h1>
+                <h1>Arthur DeLong</h1>
             </header>
             <div class="content">
                 <p>Full-service law firm focused on real estate,
