@@ -6,10 +6,20 @@
  * Time: 12:03 PM
  */
 
-    include ("dbconnect.php");
-
 
     if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        $errors = array();
+
+        // checking for first name
+        if(empty($_POST['firstname']))
+        {
+            $errors[] = 'You forgot to enter your first name.';
+        }
+        else
+        {
+            $fname = trim($_POST['firstname']);
+        }
 
         $myusername = mysqli_real_escape_string($dbc,$_POST['username']);
         $mypassword = mysqli_real_escape_string($dbc,$_POST['password']);

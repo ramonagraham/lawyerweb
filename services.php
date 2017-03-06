@@ -3,8 +3,8 @@ include 'header.php';
 ?>
 
 
-    <title>Richard Levenson Law Practice Areas</title>
-    <meta name="description" content="Our firm specializes in Estate planning, Business orgainzation law,
+    <title>Arthur DeLong Law Practice Areas</title>
+    <meta name="description" content="Arhtur DeLong specializes in Estate planning, Business orgainzation law,
     Commercial Transaction law, and Real Estate law">
 
 <?php
