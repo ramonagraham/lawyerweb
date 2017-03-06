@@ -3,8 +3,8 @@ include 'header.php';
 ?>
 
 
-    <title>Richard Levenson Blogs</title>
-    <meta name="description" content="Our blogs are about relevant information regarding real estate,
+    <title>Arthur DeLong Blogs</title>
+    <meta name="description" content="Arthur's blogs are about relevant information regarding real estate,
     business organization, estate planning, or commercial laws">
 
 <?php
