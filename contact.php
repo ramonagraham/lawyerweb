@@ -25,61 +25,11 @@ include 'navbar.php';
 
     </div>
 
-    <!-- Validate Captcha-->
-<?php
-if (isset($_POST['submit']) && !empty($_POST['submit'])):
-    //validate form
-    $name = !empty($_POST['name']) ? $_POST['name'] : '';
-    $email = !empty($_POST['email']) ? $_POST['email'] : '';
-    $message = !empty($_POST['message']) ? $_POST['message'] : '';
-    if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
-        //your site secret key
-        $secret = '6Ldo8BMUAAAAAMql_tzEapQuNmtDbkoDDw1TqYrd';
-        //get verify response data
-        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' .
-            $secret . '&response=' . $_POST['g-recaptcha-response']);
-        $responseData = json_decode($verifyResponse);
-        if ($responseData->success):
-            //contact form submission code
-            $to = 'hwagoner11@outlook.com';
-            $subject = 'New contact form have been submitted';
-            $htmlContent = "
-                <h1>Contact request details</h1>
-                <p><b>Name: </b>" . $name . "</p>
-                <p><b>Email: </b>" . $email . "</p>
-                <p><b>Message: </b>" . $message . "</p>
-            ";
-            // Always set content-type when sending HTML email
-            $headers = "MIME-Version: 1.0" . "\r\n";
-            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-            // More headers
-            $headers .= 'From:' . $name . ' <' . $email . '>' . "\r\n";
-            //send email
-            @mail($to, $subject, $htmlContent, $headers);
-
-            $succMsg = 'Your contact request have submitted successfully.';
-
-            //reset fields
-            $name = '';
-            $email = '';
-            $message = '';
-        else:
-            $errMsg = 'Robot verification failed, please try again.';
-        endif;
-    else:
-        $errMsg = 'Please click on the reCAPTCHA box.';
-    endif;
-else:
-    $errMsg = '';
-    $succMsg = '';
-endif;
-?>
-
     <!-- Contact Form-->
     <section id="contact">
         <div class="inner">
             <section>
-                <form method="post" action="">
+                <form id="contact-form" method="post" action="">
                     <div class="field half first">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name" value ="<?php echo $name; ?>"required/>
@@ -93,17 +43,13 @@ endif;
                         <textarea name="message" id="message" rows="6" required><?php echo $message; ?></textarea>
 
                     </div>
-                    <div>
-                        <?php
-                        echo $errMsg, $succMsg;
-                        ?>
-                    </div>
+
                     <div class="g-recaptcha" data-sitekey="6Ldo8BMUAAAAACw716jeK8UmL-CqSWC8uPtqonHI">
 
                     </div>
 
                     <ul class="actions">
-                        <li><input type="submit" name="submit" value="Send Message" class="special"/></li>
+                        <li><input type="button" id = 'submit' name="submit" value="Send Message" class="special"/></li>
                         <li><input type="reset" value="Clear"/></li>
                     </ul>
                 </form>
@@ -137,7 +83,7 @@ endif;
         </div>
     </section>
 
-
+<script src = 'assets/js/contact.js'></script>
 
 
 <?php
