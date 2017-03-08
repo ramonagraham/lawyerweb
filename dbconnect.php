@@ -7,10 +7,11 @@
  */
 
 // Database access information, constant.
-DEFINE('DB_USER','attorneyatlaw');
+DEFINE('DB_USER','attorney_rhcj');
 DEFINE('DB_PASSWORD', 'Password01');
 DEFINE('DB_HOST','localhost');
 DEFINE('DB_DATABASE','attorney_users');
 
-$dbc=@mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_DATABASE) OR die ('Could not connect to MySQL');
+$dbc=@mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_DATABASE)
+    OR die ('Error connecting to database:'. mysqli_connect_error());
 ?>

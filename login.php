@@ -46,11 +46,11 @@ include 'navbar.php';
 
                     <div class="field">
                         <label>Password</label>
-                        <input type="password" placeholder="Enter Password" name="password" required/>
+                        <input type="password" placeholder="Enter Password" name="password" required />
                     </div>
 
                     <div class="actions">
-                        <input type="submit" name="submit" value="Log In" class="special"/>
+                        <input type="submit" name="submit" value="Log In" class="special"  />
                     </div>
 
                 </form>
