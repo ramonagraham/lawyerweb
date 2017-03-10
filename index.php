@@ -18,7 +18,7 @@ include 'navbar.php';
                     <img src="images/office.jpg" alt="Northern Pacific Office Building"/>
                 </span>
         <header class="major">
-            <h1>ARTHUR DeLONG</h1>
+            <h1>Arthur DeLong</h1>
         </header>
         <div class="content">
             <p>Full-service law firm focused on real estate,
