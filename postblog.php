@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['login_user'])) {
+    header("location:login.php");
+}
+
+?>
+
+
 <form method="post" action="process-blog.php">
     <fieldset>
         Post Title:&nbsp;
