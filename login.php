@@ -1,8 +1,8 @@
 <?php
-
-/*if (isset($_SESSION['login_user'])) {
+session_start();
+if (isset($_SESSION['login_user'])) {
     header("location:postblog.php");
-}*/
+}
 include 'header.php';
 ?>
 
@@ -13,9 +13,9 @@ include 'navbar.php';
 
 
 ?>
+    <link rel="stylesheet" href="assets/css/login.css">
     <!-- Main -->
     <div id="main">
-
 
         <!-- Two -->
         <section id="two">

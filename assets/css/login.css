@@ -1,0 +1,15 @@
+form .field {
+    display: block;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+select,
+textarea {
+    width: 50%;
+}
