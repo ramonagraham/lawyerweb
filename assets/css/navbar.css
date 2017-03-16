@@ -11,8 +11,7 @@
     float:none;
 }
 
- .button.special:hover {
+.button.special:hover {
     background-color: #53e3fb !important;
     text-decoration: underline;
 }
-
