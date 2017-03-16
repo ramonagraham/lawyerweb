@@ -59,3 +59,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <!-- Custom Navigation Bar Stylesheet -->
     <link rel="stylesheet" href="assets/css/navbar.css"/>
 
+    <!-- Hide Logout Button until active -->
+    <link rel="stylesheet" href="assets/css/LogoutButton.css"/>
+

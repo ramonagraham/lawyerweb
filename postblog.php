@@ -4,6 +4,9 @@ if (!isset($_SESSION['login_user'])) {
     header("location:login.php");
 }
 
+include_once 'header.php';
+include_once 'navbar.php';
+
 ?>
 
 
@@ -20,3 +23,7 @@ if (!isset($_SESSION['login_user'])) {
 
     <p><input type="submit" id="submit" name="submit" value="Submit post" /></p>
 </form>
+
+<?php
+include_once 'footer.php';
+?>
