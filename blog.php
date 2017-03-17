@@ -36,11 +36,13 @@ include 'navbar.php';
             <div class="inner">
                 <section>
                     <?php
-                        $retrieveBlogs = new BlogProcessing();
-                        $result = $retrieveBlogs->getBlogs();
+                    $retrieveBlogs = new BlogProcessing();
+                    $result = $retrieveBlogs->getBlogs();
 
-                        print_r($result);
-
+                    foreach ($result as $row) {
+                        echo '<h1>' . $row['title'] . '</h1>';
+                        echo '<p>' . $row['content'] . '</p>';
+                    }
                     ?>
                     <hr class="major"/>
                 </section>
