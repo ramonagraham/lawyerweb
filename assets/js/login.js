@@ -11,7 +11,7 @@ $(document).ready(function () {
         $.ajax ({
 
             type: "POST",
-            url: "process-login.php",
+            url: "assets/includes/process-login.php",
             data: {submit : "submit", username: username, password:password},
             success: function (result) {
                 console.log(result);

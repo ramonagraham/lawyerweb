@@ -1,6 +1,6 @@
 <?php
-include 'header.php';
-include 'blogs-dbconnect.php';
+include_once 'header.php';
+require_once '../../dbcon.php';
 ?>
 
 

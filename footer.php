@@ -21,8 +21,7 @@
 <script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<!-- Logout Button Toggle -->
-<script src="assets/js/toggleLoginLogout.js"></script>
+
 <script src="assets/js/navbar.js"></script>
 <script src="assets/js/logout.js"></script>
 
