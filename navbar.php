@@ -1,4 +1,5 @@
 </head>
+
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -22,7 +23,12 @@
                 <li><a ontouchstart="" id="nav-bios" class="button special" href="bios.php">About Arthur</a></li>
                 <li><a ontouchstart="" id="nav-blog" class="button special" href="blog.php">Blogs</a></li>
                 <li><a ontouchstart="" id="nav-contact" class="button special" href="contact.php">Contact Arthur</a></li>
-                <li><a ontouchstart="" id="nav-logout" class="hide-tab button special">Logout</a></li>
+                <?php
+                if (isset($_SESSION['login_user'])) {
+                    echo "<li><a ontouchstart='' id='nav-logout' class='button special'>Logout</a></li>";
+
+                }
+                ?>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
