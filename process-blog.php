@@ -6,7 +6,7 @@
  * Time: 12:03 PM
  */
 
-include ("blogs-dbconnect.php");
+require_once('../../dbcon.php');
 session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
