@@ -1,6 +1,7 @@
 <?php
 include_once 'header.php';
-require_once '../../dbcon.php';
+require_once '/home/attorneyatlaw/dbcon.php';
+include_once 'assets/includes/process-blog.php';
 ?>
 
 
@@ -35,12 +36,11 @@ include 'navbar.php';
             <div class="inner">
                 <section>
                     <?php
-                    $sql = "SELECT * FROM posts";
-                    $result = mysqli_query($dbc, $sql);
-                    foreach($result as $row) {
-                        echo '<h1>' . $row['title'] . '</h1>';
-                        echo '<p>' . $row['content'] . '</p>';
-                    }
+                        $retrieveBlogs = new BlogProcessing();
+                        $result = $retrieveBlogs->getBlogs();
+
+                        print_r($result);
+
                     ?>
                     <hr class="major"/>
                 </section>

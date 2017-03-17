@@ -6,11 +6,12 @@ if (!isset($_SESSION['login_user'])) {
 
 include_once 'header.php';
 include_once 'navbar.php';
+include_once "assets/includes/process-blog.php";
 
 ?>
 
 
-<form method="post" action="process-blog.php">
+<form method="post" action="">
     <fieldset>
         Post Title:&nbsp;
         <br>
