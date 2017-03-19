@@ -15,7 +15,7 @@ include 'assets/includes/navbar.inc.php';
     <section id="banner" class="style2">
         <div class="inner">
             <span class="image">
-                <img src="images/tacomaskyline.jpg" alt="Tacoma Real Estate Skyline"/>
+                <img src="assets/images/tacomaskyline.jpg" alt="Tacoma Real Estate Skyline"/>
             </span>
             <header class="major">
                 <h1>About Arthur</h1>

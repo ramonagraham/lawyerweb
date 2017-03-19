@@ -15,7 +15,7 @@ include 'assets/includes/navbar.inc.php';
     <section id="banner" class="style2">
         <div class="inner">
             <span class="image">
-                <img src="images/tacomaskyline.jpg" alt="Tacoma Skyline"/>
+                <img src="assets/images/tacomaskyline.jpg" alt="Tacoma Skyline"/>
             </span>
             <header class="major">
                 <h1>Areas Of Expertise</h1>
@@ -40,7 +40,7 @@ include 'assets/includes/navbar.inc.php';
         <section class="spotlights" id="business-organization">
             <section id="realestate">
                 <a href="contact.php" class="image">
-                    <img src="images/tacomaskyline.jpg" alt="Real Estate" data-position="top center"/>
+                    <img src="assets/images/tacomaskyline.jpg" alt="Real Estate" data-position="top center"/>
                 </a>
                 <div class="content">
                     <div class="inner">
@@ -63,7 +63,7 @@ include 'assets/includes/navbar.inc.php';
             </section>
             <section id="businessorganization">
                 <a href="contact.php" class="image">
-                    <img src="images/handscity.jpg" alt="Business Organization" data-position="center center"/>
+                    <img src="assets/images/handscity.jpg" alt="Business Organization" data-position="center center"/>
                 </a>
                 <div class="content">
                     <div class="inner">
@@ -87,7 +87,7 @@ include 'assets/includes/navbar.inc.php';
             </section>
             <section id="estateplanning">
                 <a href="contact.php" class="image">
-                    <img src="images/children.jpg" alt="Estate Planning" data-position="top center"/>
+                    <img src="assets/images/children.jpg" alt="Estate Planning" data-position="top center"/>
                 </a>
                 <div class="content">
                     <div class="inner">
@@ -109,7 +109,7 @@ include 'assets/includes/navbar.inc.php';
             </section>
             <section id="commercialtransactions">
                 <a href="contact.php" class="image">
-                    <img src="images/OfficeBuildings.jpg" alt="Commercial Transactions" data-position="25% 25%"/>
+                    <img src="assets/images/OfficeBuildings.jpg" alt="Commercial Transactions" data-position="25% 25%"/>
                 </a>
                 <div class="content">
                     <div class="inner">

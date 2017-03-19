@@ -56,6 +56,8 @@ include 'assets/includes/navbar.inc.php';
                 </form>
             </section>
 
+            <!-- Contact info -->
+
             <section class="split">
                 <section>
                     <div class="contact-method">

@@ -17,7 +17,7 @@ include 'assets/includes/navbar.inc.php';
     <section id="banner" class="major">
     <div class="inner">
             <span class="image">
-                    <img src="images/office.jpg" alt="Northern Pacific Office Building"/>
+                    <img src="assets/images/office.jpg" alt="Northern Pacific Office Building"/>
                 </span>
         <header class="major">
             <h1>Arthur DeLong</h1>
@@ -35,7 +35,7 @@ include 'assets/includes/navbar.inc.php';
     <section id="one" class="tiles">
         <article>
             <span class="image">
-                <img src="images/tacomaskyline.jpg" alt="Real Estate"/>
+                <img src="assets/images/tacomaskyline.jpg" alt="Real Estate"/>
             </span>
             <header class="major">
                 <h3><a href="services.php#realestate" class="link">Real Estate</a></h3>
@@ -43,7 +43,7 @@ include 'assets/includes/navbar.inc.php';
         </article>
         <article>
             <span class="image">
-                <img src="images/handscity.jpg" alt="Business Organization"/>
+                <img src="assets/images/handscity.jpg" alt="Business Organization"/>
             </span>
             <header class="major">
                 <h3><a href="services.php#businessorganization" class="link">Business Organization</a></h3>
@@ -51,7 +51,7 @@ include 'assets/includes/navbar.inc.php';
         </article>
         <article>
             <span class="image">
-                <img src="images/children.jpg" alt="Estate Planning"/>
+                <img src="assets/images/children.jpg" alt="Estate Planning"/>
             </span>
             <header class="major">
                 <h3><a href="services.php#estateplanning" class="link">Estate Planning</a></h3>
@@ -59,7 +59,7 @@ include 'assets/includes/navbar.inc.php';
         </article>
         <article>
             <span class="image">
-                <img src="images/office.jpg" alt="Commercial Transaction"/>
+                <img src="assets/images/office.jpg" alt="Commercial Transaction"/>
             </span>
             <header class="major">
                 <h3><a href="services.php#commercialtransactions" class="link">Commercial Transactions</a></h3>
@@ -67,7 +67,7 @@ include 'assets/includes/navbar.inc.php';
         </article>
         <article>
             <span class="image">
-                <img src="images/office.jpg" alt="Our Team"/>
+                <img src="assets/images/office.jpg" alt="Our Team"/>
             </span>
             <header class="major">
                 <h3><a href="bios.php" class="link">About Arthur</a></h3>
@@ -75,7 +75,7 @@ include 'assets/includes/navbar.inc.php';
         </article>
         <article>
             <span class="image">
-                <img src="images/blog.jpg" alt="Blog List"/>
+                <img src="assets/images/blog.jpg" alt="Blog List"/>
             </span>
             <header class="major">
                 <h3><a href="blog.php" class="link">Blog</a></h3>

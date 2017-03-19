@@ -11,12 +11,11 @@ if (isset($_POST['submit']) && !empty($_POST['submit'])):
     //validate form
     if (!empty($_POST['name']) && (!empty($_POST['email']) && !empty($_POST['message']))):
         $name = $_POST['name'];
-        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)):
+        if(!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)):
             $errMsg = "Invalid Email";
         else:
             $email = $_POST['email'];
             $message = $_POST['message'];
-            //check captcha has been completed
             if (isset($_POST['grecaptcha']) && !empty($_POST['grecaptcha'])):
                 //your site secret key
                 $secret = '6Ldo8BMUAAAAAMql_tzEapQuNmtDbkoDDw1TqYrd';
@@ -54,7 +53,7 @@ if (isset($_POST['submit']) && !empty($_POST['submit'])):
         $errMsg = "Please fill out all fields in form";
     endif;
 else:
-    $errMsg = '';
+    $errMsg = "Please try your submission again";
 endif;
 echo $errMsg;
 ?>

@@ -26,6 +26,7 @@ include_once 'assets/includes/navbar.inc.php';
         <section id="postblog">
             <div class="inner">
 
+                <!-- Blog post form -->
                 <form method="post" action="">
 
                     <div id="error-Message"></div>

@@ -30,6 +30,8 @@ include 'assets/includes/navbar.inc.php';
                 <div id="error-Message">
 
                 </div>
+
+                <!-- login form -->
                 <form method="post">
 
                     <div class="field">

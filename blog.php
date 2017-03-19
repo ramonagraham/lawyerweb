@@ -18,7 +18,7 @@ include 'assets/includes/navbar.inc.php';
     <section id="banner" class="style2">
         <div class="inner">
             <span class="image">
-                <img src="images/blog.jpg" alt="Blog Words"/>
+                <img src="assets/images/blog.jpg" alt="Blog Words"/>
             </span>
             <header class="major">
                 <h1>Blog</h1>
@@ -36,9 +36,12 @@ include 'assets/includes/navbar.inc.php';
             <div class="inner">
                 <section>
                     <?php
+                    //create new instance of class
                     $retrieveBlogs = new BlogProcessing();
+                    //get result of getBlogs function
                     $result = $retrieveBlogs->getBlogs();
 
+                    //display all blogs in Database
                     foreach ($result as $row) {
                         echo '<h1>' . $row['title'] . '</h1>';
                         echo '<p>' . $row['content'] . '</p>';
