@@ -3,17 +3,20 @@ session_start();
 if (isset($_SESSION['login_user'])) {
     header("location:postblog.php");
 }
-include 'header.php';
+include 'assets/includes/header.inc.php';
+
 ?>
 
     <title>Login</title>
 
 <?php
-include 'navbar.php';
+include 'assets/includes/navbar.inc.php';
 
 
 ?>
+
     <link rel="stylesheet" href="assets/css/login.css">
+
     <!-- Main -->
     <div id="main">
 
@@ -36,11 +39,11 @@ include 'navbar.php';
 
                     <div class="field">
                         <label>Password</label>
-                        <input type="password" placeholder="Enter Password" name="password" id="password" required />
+                        <input type="password" placeholder="Enter Password" name="password" id="password" required/>
                     </div>
 
                     <div class="actions">
-                        <input type="submit" name="submit" id="submit" value="Log In" class="special"  />
+                        <input type="submit" name="submit" id="submit" value="Log In" class="special"/>
                     </div>
 
                 </form>
@@ -49,8 +52,8 @@ include 'navbar.php';
 
     </div>
 
-    <script src = 'assets/js/login.js'></script>
+    <script src='assets/js/login.js'></script>
 
 <?php
-include 'footer.php';
+include_once 'assets/includes/footer.inc.php';
 ?>

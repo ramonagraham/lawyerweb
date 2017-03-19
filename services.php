@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+include 'assets/includes/header.inc.php';
 ?>
 
 
@@ -8,7 +8,7 @@ include 'header.php';
     Commercial Transaction law, and Real Estate law">
 
 <?php
-include 'navbar.php';
+include 'assets/includes/navbar.inc.php';
 ?>
     <!-- Banner -->
     <!-- Note: The "styleN" class below should match that of the header element. -->
@@ -29,7 +29,7 @@ include 'navbar.php';
     <!-- Main -->
     <div id="main">
 
-        <!-- One -->
+        <!-- One - to keep the space between the banner and page content -->
         <section>
             <div class="inner">
 
@@ -139,5 +139,5 @@ include 'navbar.php';
     </div>
 
 <?php
-include 'footer.php';
+include_once 'assets/includes/footer.inc.php';
 ?>

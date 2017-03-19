@@ -18,6 +18,8 @@ $( document ).ready(function() {
         $('#nav-contact').addClass('active');
     } else if (/blog/.test(loc)) {
         $('#nav-blog').addClass('active');
+    } else if (/postblog/.test(loc)) {
+        $('#nav-postblog').addClass('active');
     } else {
         console.log(loc);
         $('#nav-home').addClass('active');

@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+include 'assets/includes/header.inc.php';
 ?>
 
 <title>Arthur DeLong</title>
@@ -8,8 +8,10 @@ include 'header.php';
     and estate planning law.">
 
 <?php
-include 'navbar.php';
+include 'assets/includes/navbar.inc.php';
 ?>
+
+
     <!-- Banner -->
 
     <section id="banner" class="major">
@@ -105,6 +107,6 @@ include 'navbar.php';
 </div>
 
 <?php
-include 'footer.php';
+include_once 'assets/includes/footer.inc.php';
 ?>
 

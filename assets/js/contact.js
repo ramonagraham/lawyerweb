@@ -10,7 +10,7 @@ $(document).ready(function () {
         var grecaptcharesponse = grecaptcha.getResponse();
         $.ajax({
             type: "POST",
-            url:"ValidateContactPage.php",
+            url:"assets/includes/ValidateContactPage.php",
             data: {
                 submit: "submit",
                 name: name,
