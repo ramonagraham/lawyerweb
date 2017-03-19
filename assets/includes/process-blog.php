@@ -10,13 +10,15 @@ session_start();
 require_once '/home/attorneyatlaw/dbcon.php';
 
 
-
+//check blog post inputs and send to post blog function
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['title']) && !empty($_POST['content'])) {
         $blogprocessing = new BlogProcessing();
         $result = $blogprocessing->postBlogEntry($_POST['title'], $_POST['content']);
-        //$result = json_encode($result);
         echo $result;
+    }
+    else {
+        echo "Please fill in both fields";
     }
 }
 
@@ -32,6 +34,7 @@ class BlogProcessing
 
     }
 
+    //insert blog entry to database
     function postBlogEntry ($title, $content) {
 
         $sql = "INSERT INTO posts(title, content) VALUES (:title, :content)";
@@ -39,7 +42,7 @@ class BlogProcessing
         $stmt->bindValue(':title',$title, PDO::PARAM_STR);
         $stmt->bindValue(':content',$content, PDO::PARAM_STR);
 
-
+        //if block for insert success or failed
         if ($stmt->execute()) {
             $result = "New record created successfully";
         } else {
@@ -48,6 +51,7 @@ class BlogProcessing
         return $result;
     }
 
+    //function to retrieve blogs
     function getBlogs() {
 
         $sql = "SELECT * FROM posts";

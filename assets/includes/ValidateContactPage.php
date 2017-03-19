@@ -5,17 +5,18 @@
  * Date: 3/6/2017
  * Time: 12:44 PM
  */
+
 //Validate Captcha
 if (isset($_POST['submit']) && !empty($_POST['submit'])):
     //validate form
     if (!empty($_POST['name']) && (!empty($_POST['email']) && !empty($_POST['message']))):
         $name = $_POST['name'];
-        if(!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)):
+        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)):
             $errMsg = "Invalid Email";
         else:
             $email = $_POST['email'];
             $message = $_POST['message'];
-            $errMsg = "submit";
+            //check captcha has been completed
             if (isset($_POST['grecaptcha']) && !empty($_POST['grecaptcha'])):
                 //your site secret key
                 $secret = '6Ldo8BMUAAAAAMql_tzEapQuNmtDbkoDDw1TqYrd';
@@ -42,10 +43,6 @@ if (isset($_POST['submit']) && !empty($_POST['submit'])):
                     @mail($to, $subject, $htmlContent, $headers);
 
                     $errMsg = 'Your contact request have submitted successfully.';
-                    //reset fields
-                    $name = '';
-                    $email = '';
-                    $message = '';
                 else:
                     $errMsg = 'Robot verification failed, please try again.';
                 endif;
@@ -58,7 +55,6 @@ if (isset($_POST['submit']) && !empty($_POST['submit'])):
     endif;
 else:
     $errMsg = '';
-    $succMsg = '';
 endif;
 echo $errMsg;
 ?>

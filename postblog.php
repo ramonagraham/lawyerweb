@@ -6,7 +6,6 @@ if (!isset($_SESSION['login_user'])) {
 
 include_once 'assets/includes/header.inc.php';
 include_once 'assets/includes/navbar.inc.php';
-include_once "assets/includes/process-blog.php";
 
 ?>
     <link rel="stylesheet" href="assets/css/form.css">
@@ -28,6 +27,9 @@ include_once "assets/includes/process-blog.php";
             <div class="inner">
 
                 <form method="post" action="">
+
+                    <div id="error-Message"></div>
+
                     <div class="field">
                         <label for="title"><h3>Blog Title:</h3></label>
                         <input type="text" size="50" maxlength="255" name="title" id="title"/>
@@ -43,7 +45,7 @@ include_once "assets/includes/process-blog.php";
                 </form>
         </section>
     </div>
-
+    <script src = 'assets/js/postblog.js'></script>
 <?php
 include_once 'assets/includes/footer.inc.php';
 ?>

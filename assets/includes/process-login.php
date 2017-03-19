@@ -9,7 +9,7 @@
 session_start();
 require_once '/home/attorneyatlaw/dbcon.php';
 
-
+//check if username and password are not empty and exist
 if (isset($_POST['submit'])) {
     if (!empty($_POST['username']) && !empty($_POST['password'])) {
         $loginprocessing = new LoginProcessing();
@@ -34,13 +34,14 @@ class LoginProcessing
     {
         $sql = "SELECT user_id FROM users WHERE username = :username and passcode = :passcode";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bindValue(':username',$username, PDO::PARAM_STR);
-        $stmt->bindValue(':passcode',$password, PDO::PARAM_STR);
+        $stmt->bindValue(':username', $username, PDO::PARAM_STR);
+        $stmt->bindValue(':passcode', $password, PDO::PARAM_STR);
 
         $stmt->execute();
 
         $count = $stmt->rowCount();
 
+        //if block for only one user
         if ($count == 1) {
             $_SESSION['login_user'] = $username;
             $result = 'logged in';
