@@ -1,9 +1,18 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Hillary
+ * Date: 3/18/2017
+ * Time: 1:05 PM
+ */
+?>
+
 <!-- Footer -->
 <footer id="footer">
     <div class="inner">
         <ul class="icons">
             <li><a target="_blank" href="http://www.twitter.com" class="icon alt fa-twitter"><span
-                            class="label">Twitter</span></a></li>
+                        class="label">Twitter</span></a></li>
             <li><a target="_blank" href="http://www.facebook.com" class="icon alt fa-facebook"><span class="label">Facebook</span></a>
             </li>
             <li><a target="_blank" href="http://www.linkedin.com" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a>
@@ -11,6 +20,7 @@
         </ul>
     </div>
 </footer>
+
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>

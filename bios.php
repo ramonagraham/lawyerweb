@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+include 'assets/includes/header.inc.php';
 ?>
 
 
@@ -7,7 +7,7 @@ include 'header.php';
     <meta name="description" content="Meet Arthur DeLong - Attorney and Lawyer located in Puget Sound, Tacoma, WA">
 
 <?php
-include 'navbar.php';
+include 'assets/includes/navbar.inc.php';
 ?>
 
     <!-- Banner -->
@@ -15,7 +15,7 @@ include 'navbar.php';
     <section id="banner" class="style2">
         <div class="inner">
             <span class="image">
-                <img src="images/tacomaskyline.jpg" alt="Tacoma Real Estate Skyline"/>
+                <img src="assets/images/tacomaskyline.jpg" alt="Tacoma Real Estate Skyline"/>
             </span>
             <header class="major">
                 <h1>About Arthur</h1>
@@ -61,5 +61,5 @@ include 'navbar.php';
     </div>
 
 <?php
-include 'footer.php';
+include_once 'assets/includes/footer.inc.php';
 ?>

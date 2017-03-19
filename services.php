@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+include 'assets/includes/header.inc.php';
 ?>
 
 
@@ -8,14 +8,14 @@ include 'header.php';
     Commercial Transaction law, and Real Estate law">
 
 <?php
-include 'navbar.php';
+include 'assets/includes/navbar.inc.php';
 ?>
     <!-- Banner -->
     <!-- Note: The "styleN" class below should match that of the header element. -->
     <section id="banner" class="style2">
         <div class="inner">
             <span class="image">
-                <img src="images/tacomaskyline.jpg" alt="Tacoma Skyline"/>
+                <img src="assets/images/tacomaskyline.jpg" alt="Tacoma Skyline"/>
             </span>
             <header class="major">
                 <h1>Areas Of Expertise</h1>
@@ -29,7 +29,7 @@ include 'navbar.php';
     <!-- Main -->
     <div id="main">
 
-        <!-- One -->
+        <!-- One - to keep the space between the banner and page content -->
         <section>
             <div class="inner">
 
@@ -40,7 +40,7 @@ include 'navbar.php';
         <section class="spotlights" id="business-organization">
             <section id="realestate">
                 <a href="contact.php" class="image">
-                    <img src="images/tacomaskyline.jpg" alt="Real Estate" data-position="top center"/>
+                    <img src="assets/images/tacomaskyline.jpg" alt="Real Estate" data-position="top center"/>
                 </a>
                 <div class="content">
                     <div class="inner">
@@ -63,7 +63,7 @@ include 'navbar.php';
             </section>
             <section id="businessorganization">
                 <a href="contact.php" class="image">
-                    <img src="images/handscity.jpg" alt="Business Organization" data-position="center center"/>
+                    <img src="assets/images/handscity.jpg" alt="Business Organization" data-position="center center"/>
                 </a>
                 <div class="content">
                     <div class="inner">
@@ -87,7 +87,7 @@ include 'navbar.php';
             </section>
             <section id="estateplanning">
                 <a href="contact.php" class="image">
-                    <img src="images/children.jpg" alt="Estate Planning" data-position="top center"/>
+                    <img src="assets/images/children.jpg" alt="Estate Planning" data-position="top center"/>
                 </a>
                 <div class="content">
                     <div class="inner">
@@ -109,7 +109,7 @@ include 'navbar.php';
             </section>
             <section id="commercialtransactions">
                 <a href="contact.php" class="image">
-                    <img src="images/OfficeBuildings.jpg" alt="Commercial Transactions" data-position="25% 25%"/>
+                    <img src="assets/images/OfficeBuildings.jpg" alt="Commercial Transactions" data-position="25% 25%"/>
                 </a>
                 <div class="content">
                     <div class="inner">
@@ -139,5 +139,5 @@ include 'navbar.php';
     </div>
 
 <?php
-include 'footer.php';
+include_once 'assets/includes/footer.inc.php';
 ?>

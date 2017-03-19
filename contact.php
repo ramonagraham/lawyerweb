@@ -1,15 +1,16 @@
 <?php
-include 'header.php';
+include 'assets/includes/header.inc.php';
 ?>
 
     <title>Contact Arthur</title>
     <meta name="description" content="Contact Arthur using the form, call, or e-mail">
 
 <?php
-include 'navbar.php';
+include 'assets/includes/navbar.inc.php';
 ?>
 
-    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+
 
     <!-- Main -->
     <div id="main" class="alt">
@@ -55,6 +56,8 @@ include 'navbar.php';
                 </form>
             </section>
 
+            <!-- Contact info -->
+
             <section class="split">
                 <section>
                     <div class="contact-method">
@@ -87,5 +90,5 @@ include 'navbar.php';
 
 
 <?php
-include 'footer.php';
+include_once 'assets/includes/footer.inc.php';
 ?>

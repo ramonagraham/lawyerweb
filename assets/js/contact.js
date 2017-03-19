@@ -10,7 +10,7 @@ $(document).ready(function () {
         var grecaptcharesponse = grecaptcha.getResponse();
         $.ajax({
             type: "POST",
-            url:"ValidateContactPage.php",
+            url:"assets/includes/ValidateContactPage.php",
             data: {
                 submit: "submit",
                 name: name,
@@ -21,10 +21,13 @@ $(document).ready(function () {
             success: function(result) {
                 console.log(result);
                 if(result == "Your contact request have submitted successfully.") {
-                    $('#contact-form')[0].reset();
-                    grecaptcha.reset();
+                    window.location.reload(true);
+                    alert(result);
+
+                } else {
+                    alert(result);
                 }
-                alert(result);
+
             }
         });
     });
