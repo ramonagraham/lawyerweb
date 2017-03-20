@@ -5,7 +5,6 @@
 $( document ).ready(function() {
     // returns the full URL
     var loc = window.location.href;
-
     //removes the active class name from the current active button
     $(".button.special.active").removeClass("active");
 
@@ -18,7 +17,7 @@ $( document ).ready(function() {
         $('#nav-contact').addClass('active');
     } else if (/blog/.test(loc)) {
         $('#nav-blog').addClass('active');
-    } else if (/postblog/.test(loc)) {
+    } else if (/post/.test(loc)) {
         $('#nav-postblog').addClass('active');
     } else {
         console.log(loc);
