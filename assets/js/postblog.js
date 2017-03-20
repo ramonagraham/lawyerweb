@@ -8,7 +8,7 @@ $(document).ready(function () {
         event.preventDefault();
         var content = $('#content').val();
         var title = $('#title').val();
-        var image = $('#uploadImage').files[0];
+        var image = $('#uploadImage').val();
         $.ajax({
             type: "POST",
             url: "assets/includes/process-blog.php",
@@ -16,7 +16,7 @@ $(document).ready(function () {
                 submit: "submit",
                 title: title,
                 content: content,
-                image: uploadImage
+                image: image
             },
             success: function (result) {
                 console.log(result);
@@ -26,7 +26,8 @@ $(document).ready(function () {
                 }
 
                 else {
-                    $('#error-Message').html(result);
+                    alert(result);
+                    //$('#error-Message').html(result);
                 }
             }
         });

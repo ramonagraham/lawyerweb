@@ -9,20 +9,29 @@
 session_start();
 require_once '/home/attorneyatlaw/dbcon.php';
 
+//set result to false unless image has been uploaded
+$result = false;
+
 
 //check blog post inputs and send to post blog function
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['title']) && !empty($_POST['content'])) {
         $blogprocessing = new BlogProcessing();
         if (!empty($_FILES['uploadImage'])) {
-            $result = $blogprocessing->postBlogEntry($_POST['title'],
-                $_POST['content'], $_FILES['uploadImage']);
-        } else {
-            $result = $blogprocessing->postBlogEntry($_POST['title'], $_POST['content'], null);
+            //$result = $blogprocessing->uploadImgtoServer($_FILES['uploadImage']);
+            $target_dir = "assets/uploads/";
+            $target_file = $target_dir . basename($_FILES['uploadImage']["name"]);
         }
-        echo $result;
+        /*if ($result) {
+
+        } else {
+            $postBlog = $blogprocessing->postBlogEntry($_POST['title'], $_POST['content']);
+        }*/
+
+        //echo $postBlog;
+        echo $target_dir;
     } else {
-        echo "Please fill in both fields";
+        echo "Please title and content in both fields";
     }
 }
 
@@ -30,6 +39,7 @@ class BlogProcessing
 {
 
     private $conn;
+    public $uploadOk;
 
     function __construct()
     {
@@ -39,7 +49,7 @@ class BlogProcessing
     }
 
     //insert blog entry to database
-    function postBlogEntry($title, $content, $image)
+    function postBlogEntry($title, $content)
     {
 
         $sql = "INSERT INTO posts(title, content) VALUES (:title, :content)";
@@ -53,12 +63,49 @@ class BlogProcessing
         } else {
             $result = "Please try your submission again";
         }
-        return $result;
+        echo $result;
     }
 
-    function uploadImage() {
+    function uploadImgtoServer($image)
+    {
+        $target_dir = "assets/uploads/";
+        $target_file = $target_dir . basename($_FILES['uploadImage']["name"]);
+        $uploadOk = 1;
 
+        $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
+        // Check if image file is a actual image or fake image
+        $check = getimagesize($image . ["tmp_name"]);
+        if ($check !== false) {
+            $uploadOk = 1;
+        } else {
+            $result = "File is not an image.";
+            $uploadOk = 0;
+        }
+
+        // Check file size
+        if ($image . ["size"] > 500000) {
+            $result = "Sorry, your file is too large.";
+            $uploadOk = 0;
+        }
+        // Allow certain file formats
+        if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+            && $imageFileType != "gif"
+        ) {
+            echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+            $uploadOk = 0;
+        }
+
+        // Check if $uploadOk is set to 0 by an error
+        if ($uploadOk == 1) {
+            if (move_uploaded_file($image . ["tmp_name"], $target_file)) {
+                $result = true;
+            } else {
+                $result = false;
+            }
+        }
+        return $target_file;
     }
+
 
     //function to retrieve blogs
     function getBlogs()
