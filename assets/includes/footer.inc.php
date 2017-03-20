@@ -19,7 +19,7 @@
             <li><a target="_blank" href="http://www.linkedin.com" class="icon alt fa-linkedin">
                     <span class="label">LinkedIn</span></a>
             </li>
-            <li><a href="login.php">&copy; 2017</span> </a>
+            <li><a class="hide_login" href="login.php">&copy; 2017</span> </a>
             </li>
         </ul>
     </div>
