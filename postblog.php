@@ -27,13 +27,17 @@ include_once 'assets/includes/navbar.inc.php';
             <div class="inner">
 
                 <!-- Blog post form -->
-                <form method="post" action="">
+                <form method="post" action="" enctype="multipart/form-data">
 
                     <div id="error-Message"></div>
 
                     <div class="field">
                         <label for="title"><h3>Blog Title:</h3></label>
-                        <input type="text" size="50" maxlength="255" name="title" id="title"/>
+                        <input type="text" size="50" maxlength="255" name="title" id="title" required/>
+                    </div>
+                    <div class="field">
+                        <label for="uploadImage"><h3>Browse image:</h3></label>
+                        <input type="file" name="uploadImage" id="uploadImage"/>
                     </div>
                     <div class="field">
                         <label for="content"><h3>Content:</h3></label>
@@ -41,7 +45,7 @@ include_once 'assets/includes/navbar.inc.php';
                     </div>
 
                     <div class="actions">
-                        <input type="submit" id="submit" name="submit" value="Submit post" class="special"/>
+                        <input type="submit" id="submit" name="submit" value="Submit post" class="special" required/>
                     </div>
                 </form>
         </section>

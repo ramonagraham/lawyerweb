@@ -14,10 +14,14 @@ require_once '/home/attorneyatlaw/dbcon.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['title']) && !empty($_POST['content'])) {
         $blogprocessing = new BlogProcessing();
-        $result = $blogprocessing->postBlogEntry($_POST['title'], $_POST['content']);
+        if (!empty($_FILES['uploadImage'])) {
+            $result = $blogprocessing->postBlogEntry($_POST['title'],
+                $_POST['content'], $_FILES['uploadImage']);
+        } else {
+            $result = $blogprocessing->postBlogEntry($_POST['title'], $_POST['content'], null);
+        }
         echo $result;
-    }
-    else {
+    } else {
         echo "Please fill in both fields";
     }
 }
@@ -35,12 +39,13 @@ class BlogProcessing
     }
 
     //insert blog entry to database
-    function postBlogEntry ($title, $content) {
+    function postBlogEntry($title, $content, $image)
+    {
 
         $sql = "INSERT INTO posts(title, content) VALUES (:title, :content)";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bindValue(':title',$title, PDO::PARAM_STR);
-        $stmt->bindValue(':content',$content, PDO::PARAM_STR);
+        $stmt->bindValue(':title', $title, PDO::PARAM_STR);
+        $stmt->bindValue(':content', $content, PDO::PARAM_STR);
 
         //if block for insert success or failed
         if ($stmt->execute()) {
@@ -51,14 +56,20 @@ class BlogProcessing
         return $result;
     }
 
+    function uploadImage() {
+
+    }
+
     //function to retrieve blogs
-    function getBlogs() {
+    function getBlogs()
+    {
 
         $sql = "SELECT * FROM posts";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        print_r: $results;
+        print_r:
+        $results;
         $this->conn = null;
         return $results;
 
