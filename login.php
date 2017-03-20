@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['login_user'])) {
-    header("location:postblog.php");
+    header("location:post.php");
 }
 include 'assets/includes/header.inc.php';
 

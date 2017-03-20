@@ -16,7 +16,7 @@ $(document).ready(function () {
             success: function (result) {
                 console.log(result);
                 if(result == 'logged in') {
-                    window.location.replace('postblog.php');
+                    window.location.replace('post.php');
                 }
                 else
                 {

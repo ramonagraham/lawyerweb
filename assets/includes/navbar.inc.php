@@ -27,7 +27,7 @@
                 if (isset($_SESSION['login_user'])) {
 
                     //show these tabs only when user is logged in
-                    echo "<li><a ontouchstart='' id='nav-postblog' class='button special' href='postblog.php'>Post Blog</a></li>";
+                    echo "<li><a ontouchstart='' id='nav-postblog' class='button special' href='post.php'>Post Blog</a></li>";
                     echo "<li><a ontouchstart='' id='nav-logout' class='button special'>Logout</a></li>";
 
                 }
