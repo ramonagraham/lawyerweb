@@ -2,6 +2,14 @@
 include 'assets/includes/header.inc.php';
 require_once '/home/attorneyatlaw/dbcon.php';
 include_once 'assets/includes/process-blog.php';
+
+$urlstuff = $_SERVER["QUERY_STRING"];
+if ($urlstuff != false) {
+    $id = substr($urlstuff, 8);
+
+    $blog =  new BlogProcessing;
+    $editblog = $blog->deleteBlog($id);
+}
 ?>
 
 
@@ -45,15 +53,19 @@ include 'assets/includes/navbar.inc.php';
                     foreach ($result as $row) {
                         echo '<h1>' . $row['title'] . '</h1>';
                         echo '<p>' . $row['content'] . '</p>';
+                        session_start();
+                        if (isset($_SESSION['login_user'])) {
+                            echo '<a href="postblog.php?blog_id=' . $row['blog_id'] . '" class="icon alt fa-pencil"><span>Edit</span></a><br>';
+                            echo '<a href="blog.php?blog_id=' . $row['blog_id'] . '" class="icon alt fa-trash"><span>Delete</span></a>';
+                        }
+                        echo '<hr class="major">';
                     }
                     ?>
-                    <hr class="major"/>
                 </section>
             </div>
         </section>
 
     </div>
-
 <?php
 include_once 'assets/includes/footer.inc.php';
 ?>
