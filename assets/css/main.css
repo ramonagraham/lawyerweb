@@ -1946,6 +1946,7 @@
 	input[type="tel"],
 	input[type="search"],
 	input[type="url"],
+	input[type="file"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -1969,6 +1970,7 @@
 		input[type="tel"]:invalid,
 		input[type="search"]:invalid,
 		input[type="url"]:invalid,
+		input[type="file"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -1980,6 +1982,7 @@
 		input[type="tel"]:focus,
 		input[type="search"]:focus,
 		input[type="url"]:focus,
+		input[type="file"]:focus,
 		select:focus,
 		textarea:focus {
 			border-color: #9bf1ff;
@@ -2025,6 +2028,7 @@
 	input[type="tel"],
 	input[type="search"],
 	input[type="url"],
+	input[type="file"],
 	select {
 		height: 2.75em;
 	}

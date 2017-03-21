@@ -26,14 +26,20 @@ include_once 'assets/includes/navbar.inc.php';
         <section id="postblog">
             <div class="inner">
 
-                <!-- Blog post form -->
-                <form method="post" action="">
 
-                    <div id="error-Message"></div>
+                <div id="error-Message"><?php echo $_SESSION['file']; ?></div>
+
+                <!-- Blog post form -->
+                <form id='posting' method="post" action="assets/includes/process-blog.php"
+                      enctype="multipart/form-data">
 
                     <div class="field">
                         <label for="title"><h3>Blog Title:</h3></label>
-                        <input type="text" size="50" maxlength="255" name="title" id="title"/>
+                        <input type="text" size="50" maxlength="255" name="title" id="title" required/>
+                    </div>
+                    <div class="field">
+                        <label for="uploadImage"><h3>Browse image:</h3></label>
+                        <input type="file" name="uploadImage" id="uploadImage"/>
                     </div>
                     <div class="field">
                         <label for="content"><h3>Content:</h3></label>
@@ -41,12 +47,11 @@ include_once 'assets/includes/navbar.inc.php';
                     </div>
 
                     <div class="actions">
-                        <input type="submit" id="submit" name="submit" value="Submit post" class="special"/>
+                        <input type="submit" id="submit" name="submit" value="Submit post" class="special" required/>
                     </div>
                 </form>
         </section>
     </div>
-    <script src = 'assets/js/postblog.js'></script>
 <?php
 include_once 'assets/includes/footer.inc.php';
 ?>

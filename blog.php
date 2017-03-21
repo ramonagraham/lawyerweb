@@ -20,7 +20,7 @@ if ($urlstuff != false) {
 <?php
 include 'assets/includes/navbar.inc.php';
 ?>
-
+<link rel="stylesheet" href="assets/css/blog.css"/>
     <!-- Banner -->
     <!-- Note: The "styleN" class below should match that of the header element. -->
     <section id="banner" class="style2">
@@ -51,6 +51,8 @@ include 'assets/includes/navbar.inc.php';
 
                     //display all blogs in Database
                     foreach ($result as $row) {
+                        echo "<div class='blogRow'>";
+                        echo "<div class='title'>";
                         echo '<h1>' . $row['title'] . '</h1>';
                         echo '<p>' . $row['content'] . '</p>';
                         session_start();
@@ -59,6 +61,19 @@ include 'assets/includes/navbar.inc.php';
                             echo '<a href="blog.php?blog_id=' . $row['blog_id'].'" class="icon alt fa-trash"><span>Delete</span></a>';
                         }
                         echo '<hr class="major">';
+                        echo "</div>";
+                        echo "<div class='contentPost'>";
+                        echo '<p>';
+                        if($row['image'] != null) {
+                            echo "<div class='image'>";
+                            echo "<img src='assets/includes/" . $row['image'] . "'" . "alt=''/>";
+                            echo "</div>";
+                        }
+                        echo $row['content'] . "</p>";
+                        echo "</div>";
+                        echo "</div>";
+
+
                     }
                     ?>
                     <hr class="major"/>
