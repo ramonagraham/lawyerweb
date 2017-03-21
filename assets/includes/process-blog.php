@@ -11,7 +11,6 @@ require_once '/home/attorneyatlaw/dbcon.php';
 $_SESSION['file'];
 ob_start();
 
-
 //check blog post inputs and send to post blog function
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['title']) && !empty($_POST['content'])) {
@@ -130,9 +129,31 @@ class BlogProcessing
         $results;
         $this->conn = null;
         return $results;
+    }
 
+    //function to retrieve a single blog
+    function getBlogID($id) {
+        $sql = "SELECT * FROM posts WHERE blog_id = :id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindParam(':id', $id);
+        $stmt->execute();
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        print_r: $results;
+        $this->conn = null;
+        return $results;
+    }
+
+    //function to delete a single blog
+    function deleteBlog($id) {
+        $sql = "DELETE FROM posts WHERE blog_id = :id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindParam(':id', $id);
+        $stmt->execute();
+        $this->conn = null;
     }
 }
+?>
+
 
 ?>
 
