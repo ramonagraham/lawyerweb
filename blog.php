@@ -58,7 +58,7 @@ include 'assets/includes/navbar.inc.php';
                             echo '<a href="postblog.php?blog_id=' . $row['blog_id'].'" class="icon alt fa-pencil"><span>Edit</span></a><br>';
                             echo '<a href="blog.php?blog_id=' . $row['blog_id'].'" class="icon alt fa-trash"><span>Delete</span></a>';
                         }
-
+                        echo '<hr class="major">';
                     }
                     ?>
                     <hr class="major"/>
