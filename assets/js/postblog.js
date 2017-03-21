@@ -14,16 +14,17 @@ $(document).ready(function () {
             data: {
                 submit: "submit",
                 title: title,
-                content: content
+                description: description,
+                content: content,
+                social: "post"
             },
             success: function (result) {
                 console.log(result);
+                alert('here');
                 if (result == "New record created successfully") {
                     alert(result);
                     window.location.reload();
-                }
-
-                else {
+                } else {
                     $('#error-Message').html(result);
                 }
             }
