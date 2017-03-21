@@ -32,7 +32,7 @@ include 'assets/includes/navbar.inc.php';
                 </div>
 
                 <!-- login form -->
-                <form method="post">
+                <form method="post"
 
                     <div class="field">
                         <label>Username</label>

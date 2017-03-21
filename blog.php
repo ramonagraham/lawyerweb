@@ -12,7 +12,7 @@ include_once 'assets/includes/process-blog.php';
 <?php
 include 'assets/includes/navbar.inc.php';
 ?>
-
+<link rel="stylesheet" href="assets/css/blog.css"/>
     <!-- Banner -->
     <!-- Note: The "styleN" class below should match that of the header element. -->
     <section id="banner" class="style2">
@@ -43,8 +43,22 @@ include 'assets/includes/navbar.inc.php';
 
                     //display all blogs in Database
                     foreach ($result as $row) {
+                        echo "<div class='blogRow'>";
+                        echo "<div class='title'>";
                         echo '<h1>' . $row['title'] . '</h1>';
-                        echo '<p>' . $row['content'] . '</p>';
+                        echo "</div>";
+                        echo "<div class='contentPost'>";
+                        echo '<p>';
+                        if($row['image'] != null) {
+                            echo "<div class='image'>";
+                            echo "<img src='assets/includes/" . $row['image'] . "'" . "alt=''/>";
+                            echo "</div>";
+                        }
+                        echo $row['content'] . "</p>";
+                        echo "</div>";
+                        echo "</div>";
+
+
                     }
                     ?>
                     <hr class="major"/>

@@ -26,10 +26,12 @@ include_once 'assets/includes/navbar.inc.php';
         <section id="postblog">
             <div class="inner">
 
-                <!-- Blog post form -->
-                <form method="post" action="" enctype="multipart/form-data">
 
-                    <div id="error-Message"></div>
+                <div id="error-Message"><?php echo $_SESSION['file']; ?></div>
+
+                <!-- Blog post form -->
+                <form id='posting' method="post" action="assets/includes/process-blog.php"
+                      enctype="multipart/form-data">
 
                     <div class="field">
                         <label for="title"><h3>Blog Title:</h3></label>
@@ -50,7 +52,6 @@ include_once 'assets/includes/navbar.inc.php';
                 </form>
         </section>
     </div>
-    <script src = 'assets/js/postblog.js'></script>
 <?php
 include_once 'assets/includes/footer.inc.php';
 ?>

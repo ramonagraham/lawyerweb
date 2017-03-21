@@ -1,0 +1,21 @@
+.blogRow {
+    display:inline-table;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.title {
+    display:block;
+}
+.image {
+    height: 300px;
+    width: 300px;
+    float: left;
+    padding-right: 1em;
+}
+
+.contentPost {
+
+}
+

@@ -8,31 +8,25 @@
 
 session_start();
 require_once '/home/attorneyatlaw/dbcon.php';
-
-//set result to false unless image has been uploaded
-$result = false;
+$_SESSION['file'];
+ob_start();
 
 
 //check blog post inputs and send to post blog function
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['title']) && !empty($_POST['content'])) {
         $blogprocessing = new BlogProcessing();
-        if (!empty($_FILES['uploadImage'])) {
-            //$result = $blogprocessing->uploadImgtoServer($_FILES['uploadImage']);
-            $target_dir = "assets/uploads/";
-            $target_file = $target_dir . basename($_FILES['uploadImage']["name"]);
-        }
-        /*if ($result) {
-
+        if ($_FILES['uploadImage']['size'] > 0 && $_FILES['uploadImage']['error'] == 0) {
+            $result = $blogprocessing->uploadImgtoServer($_FILES['uploadImage'], $_POST['title'], $_POST['content']);
         } else {
-            $postBlog = $blogprocessing->postBlogEntry($_POST['title'], $_POST['content']);
-        }*/
-
-        //echo $postBlog;
-        echo $target_dir;
+            $result = $blogprocessing->postBlogEntry($_POST['title'], $_POST['content'], null);
+        }
     } else {
-        echo "Please title and content in both fields";
+        $result = "Please fill out title and content";
     }
+    $_SESSION['file'] = $result;
+    ob_end_clean();
+    header('Location: ../../post.php');
 }
 
 class BlogProcessing
@@ -49,13 +43,19 @@ class BlogProcessing
     }
 
     //insert blog entry to database
-    function postBlogEntry($title, $content)
+    function postBlogEntry($title, $content, $image)
     {
-
-        $sql = "INSERT INTO posts(title, content) VALUES (:title, :content)";
+        if ($image == null) {
+            $sql = "INSERT INTO posts(title, content) VALUES (:title, :content)";
+        } else {
+            $sql = "INSERT INTO posts(title, content, image) VALUES (:title, :content, :image)";
+        }
         $stmt = $this->conn->prepare($sql);
         $stmt->bindValue(':title', $title, PDO::PARAM_STR);
         $stmt->bindValue(':content', $content, PDO::PARAM_STR);
+        if ($image != null) {
+            $stmt->bindValue(':image', $image, PDO::PARAM_STR);
+        }
 
         //if block for insert success or failed
         if ($stmt->execute()) {
@@ -63,18 +63,18 @@ class BlogProcessing
         } else {
             $result = "Please try your submission again";
         }
-        echo $result;
+        return $result;
     }
 
-    function uploadImgtoServer($image)
+    function uploadImgtoServer($image, $title, $content)
     {
-        $target_dir = "assets/uploads/";
-        $target_file = $target_dir . basename($_FILES['uploadImage']["name"]);
+
+        $target_dir = "uploads/";
+        $target_file = $target_dir . basename($image["name"]);
         $uploadOk = 1;
 
-        $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
         // Check if image file is a actual image or fake image
-        $check = getimagesize($image . ["tmp_name"]);
+        $check = getimagesize($image["tmp_name"]);
         if ($check !== false) {
             $uploadOk = 1;
         } else {
@@ -82,8 +82,18 @@ class BlogProcessing
             $uploadOk = 0;
         }
 
+        // Check if file already exists
+        if (file_exists($target_file)) {
+            $result = "Sorry, file already exists.";
+            $uploadOk = 0;
+        }
+
+        //get file type
+        $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
+
+
         // Check file size
-        if ($image . ["size"] > 500000) {
+        if ($image["size"] > 500000) {
             $result = "Sorry, your file is too large.";
             $uploadOk = 0;
         }
@@ -91,19 +101,20 @@ class BlogProcessing
         if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
             && $imageFileType != "gif"
         ) {
-            echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+            $result = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
             $uploadOk = 0;
         }
 
         // Check if $uploadOk is set to 0 by an error
         if ($uploadOk == 1) {
-            if (move_uploaded_file($image . ["tmp_name"], $target_file)) {
-                $result = true;
+            if (move_uploaded_file($image["tmp_name"], $target_file)) {
+                $result = $this->postBlogEntry($title, $content, $target_file);
             } else {
-                $result = false;
+                $result = "Image upload failed";
+
             }
         }
-        return $target_file;
+        return $result;
     }
 
 
@@ -122,5 +133,7 @@ class BlogProcessing
 
     }
 }
+
+?>
 
 
