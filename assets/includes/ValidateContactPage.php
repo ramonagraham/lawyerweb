@@ -1,9 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Hillary
- * Date: 3/6/2017
- * Time: 12:44 PM
+/*
+ *  Team Red Hot Chili Jellos
+ *  Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+ *  File: ValidataContactPage.php
+ *  Purpose: This file processes the CAPTCHA on the contact.php page.
  */
 
 //Validate Captcha

@@ -1,9 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Ramona
- * Date: 2/24/2017
- * Time: 12:03 PM
+/*
+ *  Team Red Hot Chili Jellos
+ *  Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+ *  File: process-login.php
+ *  Purpose: This file has the LoginProcessing class to create a database connection,
+ *  and query the database for the username.
  */
 
 session_start();

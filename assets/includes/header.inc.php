@@ -1,9 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Hillary
- * Date: 3/18/2017
- * Time: 11:53 AM
+/*
+ *  Team Red Hot Chili Jellos
+ *  Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+ *  File: header.inc.php
+ *  Purpose: This file is the beginning of the HTML website pages.
  */
 
 session_start();

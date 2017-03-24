@@ -2,6 +2,13 @@
 include 'assets/includes/header.inc.php';
 ?>
 
+<!--
+    Team Red Hot Chili Jellos
+    Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+    File: bios.php
+    Purpose: This file contains the biography of the blog owner.
+-->
+
 
     <title>About Arthur DeLong</title>
     <meta name="description" content="Meet Arthur DeLong - Attorney and Lawyer located in Puget Sound, Tacoma, WA">
@@ -11,14 +18,13 @@ include 'assets/includes/navbar.inc.php';
 ?>
 
     <!-- Banner -->
-    <!-- Note: The "styleN" class below should match that of the header element. -->
     <section id="banner" class="style2">
         <div class="inner">
             <span class="image">
                 <img src="assets/images/tacomaskyline.jpg" alt="Tacoma Real Estate Skyline"/>
             </span>
             <header class="major">
-                <h1>About Arthur</h1>
+                <h1>About Arthur DeLong</h1>
             </header>
             <div class="content">
 
@@ -41,7 +47,7 @@ include 'assets/includes/navbar.inc.php';
                         international trade and intellectual property law. Arthur is a published author in the
                         field of Islamic Finance, and also advises on Sharia-compliant structured transactions and
                         Islamic wills.
-
+                        <br><br>
                         In addition to his law degree, Arthur holds a Master's Degree in International Business from
                         Albers School of Business, and a BA in Diplomacy/World Affairs and Spanish from Occidental
                         College.
@@ -50,8 +56,6 @@ include 'assets/includes/navbar.inc.php';
                         area of practice, Arthur also does significant pro bono work on international human rights
                         issues
                         with the Iraqi Refugee Assistance Project.</p>
-
-
                     <hr class="major"/>
 
                 </section>

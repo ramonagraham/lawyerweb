@@ -1,4 +1,13 @@
 <?php
+
+/*
+ *  Team Red Hot Chili Jellos
+ *  Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+ *  File: post.php
+ *  Purpose: This file is the blog form to submit new blogs.
+ */
+
+
 session_start();
 if (!isset($_SESSION['login_user'])) {
     header("location:login.php");
@@ -25,7 +34,6 @@ include_once 'assets/includes/navbar.inc.php';
 
         <section id="postblog">
             <div class="inner">
-
 
                 <div id="error-Message"><?php echo $_SESSION['file']; ?></div>
 

@@ -2,6 +2,14 @@
 include 'assets/includes/header.inc.php';
 ?>
 
+<!--
+    Team Red Hot Chili Jellos
+    Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+    File: contact.php
+    Purpose: This file contains Arthur DeLong's contact information
+    and a contact form for the user to send a message to Arthur DeLong.
+-->
+
     <title>Contact Arthur</title>
     <meta name="description" content="Contact Arthur using the form, call, or e-mail">
 
@@ -10,7 +18,6 @@ include 'assets/includes/navbar.inc.php';
 ?>
 
     <link rel="stylesheet" href="assets/css/form.css">
-
 
     <!-- Main -->
     <div id="main" class="alt">
@@ -46,7 +53,6 @@ include 'assets/includes/navbar.inc.php';
                     </div>
 
                     <div class="g-recaptcha" data-sitekey="6Ldo8BMUAAAAACw716jeK8UmL-CqSWC8uPtqonHI">
-
                     </div>
 
                     <ul class="actions">

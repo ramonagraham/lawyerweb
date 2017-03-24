@@ -1,5 +1,12 @@
 </head>
 
+<!--
+*  Team Red Hot Chili Jellos
+*  Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+*  File: navbar.inc.php
+*  Purpose: This file is the NavBar for the website pages.
+-->
+
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
