@@ -3,6 +3,13 @@ include 'assets/includes/header.inc.php';
 require_once '/home/attorneyatlaw/dbcon.php';
 include_once 'assets/includes/process-blog.php';
 
+/*
+ *  Team Red Hot Chili Jellos
+ *  Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+ *  File: blog.php
+ *  Purpose: This file displays the blogs.
+ */
+
 $urlstuff = $_SERVER["QUERY_STRING"];
 if ($urlstuff != false) {
     $id = substr($urlstuff, 8);
@@ -22,7 +29,6 @@ include 'assets/includes/navbar.inc.php';
 ?>
 <link rel="stylesheet" href="assets/css/blog.css"/>
     <!-- Banner -->
-    <!-- Note: The "styleN" class below should match that of the header element. -->
     <section id="banner" class="style2">
         <div class="inner">
             <span class="image">
@@ -32,7 +38,6 @@ include 'assets/includes/navbar.inc.php';
                 <h1>Blog</h1>
             </header>
             <div class="content">
-
             </div>
         </div>
     </section>
@@ -46,6 +51,7 @@ include 'assets/includes/navbar.inc.php';
                     <?php
                     //create new instance of class
                     $retrieveBlogs = new BlogProcessing();
+
                     //get result of getBlogs function
                     $result = $retrieveBlogs->getBlogs();
 
@@ -55,6 +61,7 @@ include 'assets/includes/navbar.inc.php';
                         echo "<div class='title'>";
                         echo '<h1>' . $row['title'] . '</h1>';
                         echo '<p>' . $row['content'] . '</p>';
+
                         session_start();
                         if (isset($_SESSION['login_user'])) {
                             echo '<a href="postblog.php?blog_id=' . $row['blog_id'].'" class="icon alt fa-pencil"><span>Edit</span></a><br>';
@@ -64,6 +71,7 @@ include 'assets/includes/navbar.inc.php';
                         echo "</div>";
                         echo "<div class='contentPost'>";
                         echo '<p>';
+
                         if($row['image'] != null) {
                             echo "<div class='image'>";
                             echo "<img src='assets/includes/" . $row['image'] . "'" . "alt=''/>";
@@ -72,15 +80,12 @@ include 'assets/includes/navbar.inc.php';
                         echo $row['content'] . "</p>";
                         echo "</div>";
                         echo "</div>";
-
-
                     }
                     ?>
                     <hr class="major"/>
                 </section>
             </div>
         </section>
-
     </div>
 <?php
 include_once 'assets/includes/footer.inc.php';

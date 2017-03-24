@@ -1,7 +1,13 @@
 <?php
 include 'assets/includes/header.inc.php';
-?>
 
+/*
+ *  Team Red Hot Chili Jellos
+ *  Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+ *  File: services.php
+ *  Purpose: This file has the list of services Arthur DeLong provides.
+ */
+?>
 
     <title>Arthur DeLong Law Practice Areas</title>
     <meta name="description" content="Arhtur DeLong specializes in Estate planning, Business orgainzation law,
@@ -11,7 +17,6 @@ include 'assets/includes/header.inc.php';
 include 'assets/includes/navbar.inc.php';
 ?>
     <!-- Banner -->
-    <!-- Note: The "styleN" class below should match that of the header element. -->
     <section id="banner" class="style2">
         <div class="inner">
             <span class="image">
@@ -21,7 +26,6 @@ include 'assets/includes/navbar.inc.php';
                 <h1>Areas Of Expertise</h1>
             </header>
             <div class="content">
-
             </div>
         </div>
     </section>
@@ -32,7 +36,6 @@ include 'assets/includes/navbar.inc.php';
         <!-- One - to keep the space between the banner and page content -->
         <section>
             <div class="inner">
-
             </div>
         </section>
 

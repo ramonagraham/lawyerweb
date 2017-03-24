@@ -1,9 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Ramona
- * Date: 2/24/2017
- * Time: 12:03 PM
+/*
+ *  Team Red Hot Chili Jellos
+ *  Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+ *  File: process-blog.php
+ *  Purpose: This file contains the BlogProcessing class which has functions
+ *  to insert a blog into the database (attorney_db database and blog table),
+ *  upload image, retrieve the blogs, retrieve a single blog, and delete a blog.
+ *
  */
 
 session_start();
@@ -154,7 +157,5 @@ class BlogProcessing
 }
 ?>
 
-
-?>
 
 

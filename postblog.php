@@ -1,4 +1,13 @@
 <?php
+
+/*
+ *  Team Red Hot Chili Jellos
+ *  Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+ *  File: postblog.php
+ *  Purpose: This file is the blog form to submit new blogs.
+ * It accesses the BlogProcessing class to input data into the blog database.
+ */
+
 session_start();
 if (!isset($_SESSION['login_user'])) {
     header("location:login.php");

@@ -4,15 +4,20 @@ if (isset($_SESSION['login_user'])) {
     header("location:post.php");
 }
 include 'assets/includes/header.inc.php';
-
 ?>
+
+<!--
+    Team Red Hot Chili Jellos
+    Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+    File: login.php
+    Purpose: This file is the login form to enter a username and password
+    to access postblog.php to create blogs.
+-->
 
     <title>Login</title>
 
 <?php
 include 'assets/includes/navbar.inc.php';
-
-
 ?>
 
     <link rel="stylesheet" href="assets/css/login.css">
@@ -47,11 +52,9 @@ include 'assets/includes/navbar.inc.php';
                     <div class="actions">
                         <input type="submit" name="submit" id="submit" value="Log In" class="special"/>
                     </div>
-
                 </form>
             </div>
         </section>
-
     </div>
 
     <script src='assets/js/login.js'></script>

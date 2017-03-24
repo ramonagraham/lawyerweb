@@ -2,6 +2,14 @@
 include 'assets/includes/header.inc.php';
 ?>
 
+<!--
+    Team Red Hot Chili Jellos
+    Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+    File: index.php
+    Purpose: This file contains Arthur DeLong's business categories and links
+    to information about each category.
+-->
+
 <title>Arthur DeLong</title>
 <meta name="description" content="Arthur DeLong is an attorney located in Tacoma, WA who services
     the Puget Sound area. His expertise is in real estate law, business organization law, commercial transactions law,

@@ -1,9 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Hillary
- * Date: 3/18/2017
- * Time: 1:05 PM
+/*
+ *  Team Red Hot Chili Jellos
+ *  Chris Barbour, Ramona Graham, Josh Lyon, Hillary Wagoner
+ *  File: footer.inc.php
+ *  Purpose: This file displays the social media icons and links
+ *  at the bottom of the page.
  */
 ?>
 
